@@ -1,0 +1,33 @@
+.crossFade-enter-from, .crossFade-leave-to {
+    opacity: 0
+}
+.crossFade-enter-active, .crossFade-leave-active {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transition: opacity .3s;
+}
+.crossFade-enter-active {
+    z-index: 1;
+}
+.crossFade-leave-active {
+    z-index: -1;
+}
+
+.app-enter-from, .app-leave-to {
+    opacity: 0;
+    transform: scale(.95);
+}
+.app-enter-active, .app-leave-active{
+    transition: .3s !important;
+}
+
+.menu-enter-from, .menu-leave-to {
+    opacity: 0;
+    transform: rotateX(-45deg);
+}
+
+.menu-enter-active, .menu-leave-active{
+    transition: .3s !important;
+}

@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
+    p, h1, h2, input, label, td, th {
+        @apply text-gray-900;
+    }
+    
+    button {
+        @apply transform transition-all duration-200 outline-none;
+    }
+    button:active {
+        @apply scale-95;
+    }
+
+    /* Cursor Mouse*/
+    .vertical-resize {
+        cursor: s-resize;
+    }
+    .horizontal-resize {
+        cursor: w-resize
+    }
+    .top-right-resize {
+        cursor: ne-resize
+    }
+
+    .bottom-right-resize {
+        cursor: se-resize;
+    }
+
+    
+
+    
+    ::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+        opacity: 0;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgba(0,0,0,0); 
+        border-radius: 2px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        padding-top: 20px;
+        background-clip: padding-box;
+        background: rgba(255,255,255,.3); 
+        border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #C4D5D6; 
+    }
+    ::-webkit-scrollbar-button {
+        width: 4px;
+        height: 4px;
+        background: transparent;
+    }
+
+    body {
+        overflow-x: hidden
+    }
+}
+
+@layer components {
+    .headline1 {
+        @apply font-bold text-4xl text-white;
+    }
+    .headline2 {
+        @apply font-bold text-2xl opacity-80 text-white;
+    }
+    .headline3 {
+        @apply text-white text-xl opacity-80;
+    }
+    .body {
+        @apply text-white text-sm font-light opacity-80 tracking-wide ;
+    }
+    .body2 {
+        @apply text-xs font-light text-white;
+    }
+    .tag {
+        @apply font-extrabold text-white opacity-10 text-base;
+    }
+
+    /* Componentes */
+    .menu-item {
+        @apply h-10 flex items-center px-2 border-b border-white/10 last:border-0 text-white text-xs hover:bg-white/20;
+    }
+}
+
