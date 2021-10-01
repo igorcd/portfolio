@@ -56,7 +56,7 @@
 
         </transition>
 
-        <div class="flex flex-col flex-wrap h-screen content-start py-20 px-12 gap-4">
+        <div class="flex sm:flex-col flex-wrap h-screen content-end sm:content-start pb-40 py-20 px-4 sm:px-12 gap-4">
             <Shortcut v-for="shortcut in shortcuts" :key="shortcut.title" :shortcut="shortcut"/>
         </div>
     </div>
