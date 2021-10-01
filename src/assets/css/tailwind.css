@@ -18,7 +18,7 @@
         @apply scale-95;
     }
 
-    /* Cursor Mouse*/
+    /* Cursor Mouse */
     .vertical-resize {
         cursor: s-resize;
     }
@@ -33,8 +33,26 @@
         cursor: se-resize;
     }
 
-    
+    /* Bloquear scroll do body com modais abertos */
+    .lock-scroll {
+        pointer-events: none;
+        overflow: hidden;
+    }
 
+    /* esconder o scroll */
+    .hidden-scroll::-webkit-scrollbar-track {
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        background-color: transparent !important;;
+    }
+    .hidden-scroll::-webkit-scrollbar {
+        height: 0;
+        width: 3px !important;
+        background-color: transparent !important;;
+    }
+    .hidden-scroll::-webkit-scrollbar-thumb {
+        background-color: transparent !important;;
+    }
     
     ::-webkit-scrollbar {
         width: 4px;
@@ -88,9 +106,24 @@
         @apply font-extrabold text-white opacity-10 text-base;
     }
 
+    /* Botões */
+    .primary {
+        @apply h-8 rounded-lg  bg-white/10 border border-white/20 flex items-center justify-center;
+    }
+
     /* Componentes */
     .menu-item {
         @apply h-10 flex items-center px-2 border-b border-white/10 last:border-0 text-white text-xs hover:bg-white/20;
+    }
+    .task-bar {
+        @apply max-w-xs sm:max-w-none whitespace-nowrap h-15 rounded-full transition-all duration-300  bg-white/40 fixed bottom-6 left-1/2 -translate-x-1/2 backdrop-blur-md pt-[5px] px-1 z-30 overflow-x-auto sm:overflow-visible;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 6px;
+    }
+
+    .collection-view {
+        @apply fixed top-0 left-0 w-full h-screen backdrop-blur-md py-8 md:py-24 overflow-auto pointer-events-auto z-[60];
+        background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0.7) 100%)
     }
 }
 

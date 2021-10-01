@@ -1,7 +1,7 @@
 <template>
 
-    <button class="w-12 h-12 p-0.5 origin-bottom transition-all duration-300 relative active:scale-125 hover:scale-110 group"
-            :class="{'-translate-y-1 scale-110]': focused}">
+    <button class="w-12 h-12 p-0.5 origin-bottom transition-all duration-300 relative active:scale-105 sm:active:scale-125 sm:hover:scale-110 group inline-block mx-0.5 app-button"
+            :class="{'sm:-translate-y-1 scale-105 sm:scale-110]': focused}">
 
         <!-- Borda -->
         <div class="w-12 h-12 p-0.5  rounded-full  transition-opacity duration-300 absolute bg-gradient-to-b from-gray-800 to-white bottom-0 right-0"
@@ -9,9 +9,9 @@
         </div>
 
         <!-- Conteúdo -->
-        <div class="w-full h-full rounded-full bg-center flex items-center justify-center bg-cover bg-gray-50  cursor-pointer relative"
+        <div class="w-full h-full rounded-full bg-center flex items-center justify-center bg-cover  cursor-pointer relative"
              @click="$emit('pressed')"
-             :style="{'background-image': `url('${app.icon}')`}"
+             :style="style"
              style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)">
 
 
@@ -31,7 +31,7 @@
 </template>
 
 <script lang='ts'>
-import { defineComponent, PropType } from 'vue';
+import { computed, defineComponent, onMounted, PropType } from 'vue';
 import AppDTO from '../dtos/AppDTO';
 
 const AppButton = defineComponent({
@@ -47,7 +47,21 @@ const AppButton = defineComponent({
         focused: {
             type: Boolean,
             required: true
-        }
+        },
+    },
+    setup(props) {
+        const style = computed(() => {
+            return {
+                'background-image': `url('${props.app.icon}')`,
+                'background-color': props.app.foregroundColor
+            };
+        });
+
+        onMounted(() => {
+            document.querySelector("#task-bar")!.scrollLeft = 9999;
+        });
+
+        return { style };
     }
 });
 
@@ -55,5 +69,7 @@ export default AppButton;
 </script>
 
 <style>
-
+.app-button {
+    scroll-snap-align: start;
+}
 </style>

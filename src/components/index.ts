@@ -14,3 +14,7 @@ export { default as TagContainer } from './TagContainer.vue';
 export { default as Tag } from './Tag.vue';
 export { default as Hexagon } from './Hexagon.vue';
 export { default as Timeline } from './Timeline.vue';
+export { default as TimelineGroup } from './TimelineGroup.vue';
+export { default as TimelineItem } from './TimelineItem.vue';
+export { default as SearchInput } from './SearchInput.vue';
+export { default as Button } from './Button.vue';

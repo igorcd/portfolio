@@ -1,8 +1,10 @@
 <template>
-    <div class="h-screen bg-center bg-cover bg-no-repeat main-view">
+    <div class="h-screen ">
+        <!-- Background -->
+        <div class="fixed top-0 right-0 w-full h-screen bg-center bg-cover bg-no-repeat main-view z-[-1]"></div>
 
         <!-- Status Bar -->
-        <StatusBar/>
+        <StatusBar  :class="{'opacity-0': state.collectionOpened}"/>
 
         <!-- Widget Data -->
         <div class="absolute w-full sm:w-auto sm:right-9 top-32 sm:top-20 flex flex-col items-center sm:items-end">
@@ -12,7 +14,6 @@
                 <Icon icon="cloud-sun" size="1.5rem" color="white"/>
             </div>
             <p class="text-xs text-white font-light opacity-80">Desenvolvido por Igor Dantas</p>
-            <p class="text-xs text-white font-light opacity-80">EM DESENVOLVIMENTO</p>
         </div>
 
         <!-- Créditos imagem -->
@@ -26,21 +27,34 @@
                     :key="app.id"
                     :index="app.stackPosition"
                     :url="app.url"
-                    v-model:maximized="app.maximized"
-                    v-model:minimized="app.minimized"
+                    :class="{'opacity-0': state.collectionOpened}"
+                    v-model:maximized="app.options.maximized"
+                    v-model:minimized="app.options.minimized"
                     @focus="vm.focusApp(app.stackPosition)"
                     @close="vm.closeApp(index)">
             </Window>
         </transition-group>
 
 
-        <div class="h-15 rounded-full  bg-white/40 fixed bottom-6 left-1/2 -translate-x-1/2 backdrop-blur-md flex items-center px-1.5 space-x-0.5 z-30">
-            <AppButton v-for="app in vm.apps" :key="app.id"
+        <transition-group name="list-complete" tag="div"
+                          id="task-bar"
+                          class="task-bar hidden-scroll"
+                          :style="{'width': `${8 + (52 * vm.taskBarApps.length)}px`}"
+                          :class="{'opacity-0': state.collectionOpened}">
+                          
+            <AppButton v-for="app in vm.taskBarApps" :key="app.id"
                        :app="app" 
                        :opened="vm.openedApps.includes(app)"
                        :focused="vm.focusedApp.id == app.id"
-                       @pressed="vm.openApp(app)"/>
-        </div>
+                       @pressed="openApp(app)"/>
+        </transition-group>
+
+        <transition name="fade">
+            <CollectionView v-if="state.collectionOpened"
+                            @close="state.collectionOpened = false"
+                            @openApp="vm.openApp($event)"/>
+
+        </transition>
     </div>
 </template>
 
@@ -54,12 +68,15 @@ import StatusBar from './StatusBar.vue';
 import { titleCase } from '../utils/stringFunctions';
 import IpStackService from '../services/ipStackService';
 import openWeatherService from '../services/openWeatherService';
+import CollectionView from './collection/CollectionView.vue';
+import AppDTO from '../dtos/AppDTO';
 
 const MainView = defineComponent({
-    components: { AppButton, Window, StatusBar, Icon },
+    components: { AppButton, Window, StatusBar, Icon, CollectionView },
     setup() {
         const state = reactive({
-            temperature: 0
+            temperature: 0,
+            collectionOpened: false
         });
 
         const today = new Date();
@@ -81,9 +98,13 @@ const MainView = defineComponent({
             }
         };
 
+        const openApp = (app: AppDTO) => {
+            app.id == '-3' ? state.collectionOpened = true : vm.openApp(app);
+        };
+
         onMounted(() => getWeatherForecast());
 
-        return { vm, date, state };
+        return { vm, date, state, openApp };
     }
 });
 
@@ -91,6 +112,7 @@ export default MainView;
 </script>
 
 <style>
+
 .main-view {
     background-image: url('/img/bg-hor.jpg');
 }

@@ -1,3 +1,4 @@
+/* CrossFade */
 .crossFade-enter-from, .crossFade-leave-to {
     opacity: 0
 }
@@ -15,6 +16,15 @@
     z-index: -1;
 }
 
+/* Fade */
+.fade-enter-from, .fade-leave-to {
+    opacity: 0
+}
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .3s;
+}
+
+/* App Enter */
 .app-enter-from, .app-leave-to {
     opacity: 0;
     transform: scale(.95);
@@ -23,6 +33,7 @@
     transition: .3s !important;
 }
 
+/* Menu Enter */
 .menu-enter-from, .menu-leave-to {
     opacity: 0;
     transform: rotateX(-45deg);
@@ -30,4 +41,15 @@
 
 .menu-enter-active, .menu-leave-active{
     transition: .3s !important;
+}
+
+/* List */
+.list-complete-enter-from,
+.list-complete-leave-to {
+  opacity: 0;
+  transform: scale(.9);
+}
+
+.list-complete-leave-active {
+  position: absolute;
 }

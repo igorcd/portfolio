@@ -1,9 +1,9 @@
 import { reactive } from "vue";
 import AppDTO from "../dtos/AppDTO";
-import apps from '../mocks/apps';
 
-import lighteamApp from '../mocks/lighteamApp';
-import welcomeApp from '../mocks/welcomeApp';
+// Data
+import apps from '../data/apps';
+import welcomeApp from '../data/welcomeApp';
 
 interface AppsViewModelState {
     apps: AppDTO[];
@@ -16,12 +16,12 @@ class AppsViewModel {
     private state = reactive<AppsViewModelState>({
         apps: apps,
         openedApps: window.innerWidth < 640 ? [] : [welcomeApp],
-        defaultApp: lighteamApp
+        defaultApp: welcomeApp
     });
 
     /** Todos os aplicativos */
     public get apps() {
-        return this.state.apps;
+        return this.state.apps as AppDTO[];
     }
 
     /** Aplicativos abertos */
@@ -31,25 +31,33 @@ class AppsViewModel {
 
     /** Aplicativo em foco */
     public get focusedApp() {
-        return this.state.openedApps.filter(el => !el.minimized).find(el => el.stackPosition == this.state.openedApps.length - 1) || this.state.defaultApp;
+        return this.state.openedApps
+            .filter(el => !el.options.minimized)
+            .find(el => el.stackPosition == this.state.openedApps.length - 1) || this.state.defaultApp;
+    }
+
+    /** Aplicativos na barra de taregas  */
+    public get taskBarApps() {
+        const pinned = this.state.apps.filter(el => el.options.pinned);
+        return [...pinned, ...this.openedApps.filter(el => !pinned.includes(el))];
     }
 
     public get menus() {
         return this.state.openedApps
-            .filter(el => !el.minimized && el.menus.length > 0)
+            .filter(el => !el.options.minimized && el.menus.length > 0)
             .find(el => el.stackPosition == this.state.openedApps.length - 1)?.menus
              || this.state.defaultApp.menus;
     }
 
     /** O aplicativo em foco está maximizado */
     public get hasMaximizedApp() {
-        return this.focusedApp?.maximized;
+        return this.focusedApp?.options.maximized;
     }
 
     // ==== MÉTODOS ====
     /** Restaurar tamanho do app */
     public restoreAppSize() {
-        this.focusedApp.maximized = false;
+        this.focusedApp.options.maximized = false;
     }
 
     /** Focar aplicativo */
@@ -64,16 +72,15 @@ class AppsViewModel {
             // Caso seja o app
             else if(el.stackPosition == stackPosition) {
                 el.stackPosition = this.openedApps.length - 1;
-                el.minimized = false;
+                el.options.minimized = false;
             }
         });
     }
 
     public minimizeCurrentApp() {
         if(this.focusedApp.id != '-1') {
-            this.focusedApp.minimized = true;
+            this.focusedApp.options.minimized = true;
         }
-        
     }
 
     /** Abrir aplicativo */

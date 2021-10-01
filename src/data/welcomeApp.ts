@@ -1,14 +1,22 @@
 import AppDTO from "../dtos/AppDTO";
 
-const lighteamApp: AppDTO = {
-    id: '-1',
+const welcomeApp: AppDTO = {
+    id: '-2',
     stackPosition: 0,
-    url: '/',
-    name: 'Lighteam',
-    icon: '',
-    favicon: 'https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Ffavicon-lighteam.svg?alt=media',
-    maximized: false,
-    minimized: false,
+    foregroundColor: "#181818",
+    meta: {
+        company: 'Lighteam',
+        year: 2021
+    },
+    url: '/welcome',
+    name: 'Igor Dantas',
+    icon: 'https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Flighteam.svg?alt=media',
+    favicon: 'https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Flighteam.svg?alt=media',
+    options: {
+        maximized: false,
+        minimized: false,
+        pinned: false
+    },
     menus: [
         {
             title: "Sobre o desenvolvedor",
@@ -69,4 +77,4 @@ const lighteamApp: AppDTO = {
     ]
 };
 
-export default lighteamApp;
+export default welcomeApp;

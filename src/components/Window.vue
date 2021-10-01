@@ -1,6 +1,6 @@
 <template>
-    <div class="fixed bg-black/70 rounded-md shadow-50 border border-white/20 window
-                max-sm:!left-0 max-sm:!top-0 max-sm:!w-screen max-sm:!h-screen max-sm:rounded-none max-sm:border-none max-sm:bg-black/95"
+    <div class="fixed bg-black/70 rounded-md shadow-50 border border-white/20 window transition-opacity duration-300
+                max-sm:!left-0 max-sm:!top-0 max-sm:!w-screen max-sm:!h-screen max-sm:rounded-none max-sm:border-none "
          :class="[
              {'!left-0 !top-0 !w-screen !h-screen rounded-none border-none bg-black/95 !z-40': state.maximized},
              {'opacity-0 translate-y-60 scale-75 pointer-events-none': minimized},
