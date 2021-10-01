@@ -10,7 +10,7 @@ const apps: AppDTO[] = [
         name: 'Certfy ID',
         icon: 'https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/icons%2Fcertfyid.svg?alt=media',
         favicon: 'https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Fcertfyid.svg?alt=media',
-        url: '/certfyid',
+        url: '/development',
         options: {
             pinned: true,
             maximized: false,
@@ -78,7 +78,7 @@ const apps: AppDTO[] = [
             maximized: false,
             minimized: false,
         },
-        url: '/pilotar',
+        url: '/development',
         meta: {
             company: "Vsoft Tecnologia",
             year: 2021
@@ -146,7 +146,7 @@ const apps: AppDTO[] = [
             year: 2021
         },
         stackPosition: 0,
-        url: "",
+        url: "/development",
     },
     {
         favicon: "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Flighteam.svg?alt=media",
@@ -165,7 +165,7 @@ const apps: AppDTO[] = [
             pinned: true
         },
         stackPosition: 0,
-        url: "",
+        url: "/development",
     },
     // Portal Red
     {
@@ -185,7 +185,7 @@ const apps: AppDTO[] = [
             year: 2021
         },
         stackPosition: 0,
-        url: "",
+        url: "/development",
     },
     // Super Aula
     {
@@ -225,7 +225,7 @@ const apps: AppDTO[] = [
             year: 2020
         },
         stackPosition: 0,
-        url: "",
+        url: "/development",
     },
     // Remote
     {
@@ -245,7 +245,7 @@ const apps: AppDTO[] = [
             year: 2020
         },
         stackPosition: 0,
-        url: "",
+        url: "/development",
     },
     // BiopassID Demo
     {
@@ -265,7 +265,7 @@ const apps: AppDTO[] = [
             year: 2020
         },
         stackPosition: 0,
-        url: "",
+        url: "/development",
     },
     // Eleições do Futuro
     {
@@ -285,7 +285,7 @@ const apps: AppDTO[] = [
             year: 2020
         },
         stackPosition: 0,
-        url: "",
+        url: "/development",
     },
     // Easy Proctor
     {
@@ -305,7 +305,7 @@ const apps: AppDTO[] = [
             year: 2020
         },
         stackPosition: 0,
-        url: "",
+        url: "/development",
     },
     welcomeApp
 ];

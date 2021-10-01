@@ -3,7 +3,7 @@ import MainView from '/src/views/MainView.vue';
 
 
 // Apps
-import Pilotar from '/src/views/apps/Pilotar.vue';
+import UnderDevelopment from '/src/views/apps/UnderDevelopment.vue';
 // import Welcome from '/src/views/apps/Welcome.vue';
 import Profile from '../views/apps/Profile.vue';
 
@@ -16,9 +16,9 @@ const router = createRouter({
             component: MainView,
         },
         {
-            path: '/pilotar',
-            name: 'pilotar',
-            component: Pilotar
+            path: '/development',
+            name: 'development',
+            component: UnderDevelopment
         },
         {
             path: '/welcome',

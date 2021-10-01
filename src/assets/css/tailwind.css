@@ -120,10 +120,19 @@
         scroll-snap-type: x mandatory;
         scroll-padding: 6px;
     }
-
     .collection-view {
         @apply fixed top-0 left-0 w-full h-screen backdrop-blur-md py-8 md:py-24 overflow-auto pointer-events-auto z-[60];
         background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0.7) 100%)
+    }
+    .window {
+        @apply fixed bg-black/70 rounded-md shadow-50 border border-white/20 transition-opacity duration-300 backdrop-blur-lg;
+        transition: opacity 150ms, transform 150ms;
+    }
+    .window-maximized {
+        @apply !left-0 !top-0 !w-screen !h-screen rounded-none border-none  !z-40;
+    }
+    .window-minimized {
+        @apply opacity-0 translate-y-60 scale-75 pointer-events-none;
     }
 }
 

@@ -46,7 +46,7 @@
             <Clock class="mr-6 ml-2 lg:!opacity-100 transition-opacity duration-300" :class="{'opacity-0': state.menuOpened}"/>
             <div id="appControls" v-if="hasMaximizedApp" class="hidden lg:flex items-center">
                 <Divider type="vertical"/>
-                <WindowControl @maximize="vm.restoreAppSize()" @minimize="vm.minimizeCurrentApp()"/>
+                <WindowControl @maximize="vm.restoreAppSize()" @minimize="vm.minimizeCurrentApp()" @close="vm.closeCurrentApp()"/>
             </div>
         </div>
     </div>

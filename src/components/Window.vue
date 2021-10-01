@@ -1,11 +1,7 @@
 <template>
-    <div class="fixed bg-black/70 rounded-md shadow-50 border border-white/20 window transition-opacity duration-300
-                max-sm:!left-0 max-sm:!top-0 max-sm:!w-screen max-sm:!h-screen max-sm:rounded-none max-sm:border-none "
-         :class="[
-             {'!left-0 !top-0 !w-screen !h-screen rounded-none border-none bg-black/95 !z-40': state.maximized},
-             {'opacity-0 translate-y-60 scale-75 pointer-events-none': minimized},
-             {'backdrop-blur-lg': !state.maximized}
-         ]"
+    <div class="window max-sm:!left-0 max-sm:!top-0 max-sm:!w-screen max-sm:!h-screen max-sm:rounded-none max-sm:border-none"
+         :class="[{'window-maximized': state.maximized},
+                  {'window-minimized': minimized},]"
          ref="windowRef"
          @mousedown="$emit('focus')"
          :style="[
@@ -283,11 +279,4 @@ export default Window;
 </script>
 
 <style>
-.window {
-    transition: opacity 150ms, transform 150ms;
-}
-
-@keyframes maximize {
-    0% { opacity: 0; transform: scale(.7) }
-}
 </style>
