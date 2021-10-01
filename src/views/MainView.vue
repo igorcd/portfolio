@@ -55,6 +55,10 @@
                             @openApp="vm.openApp($event)"/>
 
         </transition>
+
+        <div class="flex flex-col flex-wrap h-screen content-start py-20 px-12 gap-4">
+            <Shortcut v-for="shortcut in shortcuts" :key="shortcut.title" :shortcut="shortcut"/>
+        </div>
     </div>
 </template>
 
@@ -62,7 +66,7 @@
 import format from 'date-fns/format/index';
 import { pt } from 'date-fns/locale';
 import { computed, defineComponent, onMounted, reactive } from 'vue';
-import { AppButton, Window, Icon } from '../components';
+import { AppButton, Window, Icon, Shortcut } from '../components';
 import vm from '../viewModels/AppsViewModel';
 import StatusBar from './StatusBar.vue';
 import { titleCase } from '../utils/stringFunctions';
@@ -72,7 +76,7 @@ import CollectionView from './collection/CollectionView.vue';
 import AppDTO from '../dtos/AppDTO';
 
 const MainView = defineComponent({
-    components: { AppButton, Window, StatusBar, Icon, CollectionView },
+    components: { AppButton, Window, StatusBar, Icon, CollectionView, Shortcut },
     setup() {
         const state = reactive({
             temperature: 0,
@@ -85,6 +89,7 @@ const MainView = defineComponent({
             return titleCase(format(today, "E, dd 'de' MMMM", { locale: pt }));
         });
 
+        const shortcuts = computed(() => vm.shortcuts);
         const getWeatherForecast = async () => {
             try {
                 const [request] = IpStackService.getCurrentIp();
@@ -104,7 +109,7 @@ const MainView = defineComponent({
 
         onMounted(() => getWeatherForecast());
 
-        return { vm, date, state, openApp };
+        return { vm, date, state, openApp, shortcuts };
     }
 });
 

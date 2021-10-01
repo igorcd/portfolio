@@ -4,11 +4,14 @@ import AppDTO from "../dtos/AppDTO";
 // Data
 import apps from '../data/apps';
 import welcomeApp from '../data/welcomeApp';
+import ShortcutDTO from "../dtos/ShortcutDTO";
+import shortcuts from '../data/shortcuts.json';
 
 interface AppsViewModelState {
     apps: AppDTO[];
     openedApps: AppDTO[];
     defaultApp: AppDTO;
+    shortcuts: ShortcutDTO[];
 }
 
 class AppsViewModel {
@@ -16,7 +19,8 @@ class AppsViewModel {
     private state = reactive<AppsViewModelState>({
         apps: apps,
         openedApps: window.innerWidth < 640 ? [] : [welcomeApp],
-        defaultApp: welcomeApp
+        defaultApp: welcomeApp,
+        shortcuts: shortcuts as ShortcutDTO[]
     });
 
     /** Todos os aplicativos */
@@ -40,6 +44,11 @@ class AppsViewModel {
     public get taskBarApps() {
         const pinned = this.state.apps.filter(el => el.options.pinned);
         return [...pinned, ...this.openedApps.filter(el => !pinned.includes(el))];
+    }
+
+    /** Atalho */
+    public get shortcuts() {
+        return this.state.shortcuts;
     }
 
     public get menus() {

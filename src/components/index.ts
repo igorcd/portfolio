@@ -18,3 +18,4 @@ export { default as TimelineGroup } from './TimelineGroup.vue';
 export { default as TimelineItem } from './TimelineItem.vue';
 export { default as SearchInput } from './SearchInput.vue';
 export { default as Button } from './Button.vue';
+export { default as Shortcut } from './Shortcut.vue';
