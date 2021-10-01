@@ -98,7 +98,7 @@ const Window = defineComponent({
             maximized: props.maximized,
             width: window.innerWidth <= 1536 ? 700 : 870,
             height: window.innerWidth <= 1536 ? 400 : 520,
-            x: 100 + (15 * props.index),
+            x: 150 + (15 * props.index),
             y: 100  + (15 * props.index)
         });
 

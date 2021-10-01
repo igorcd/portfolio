@@ -267,26 +267,6 @@ const apps: AppDTO[] = [
         stackPosition: 0,
         url: "/development",
     },
-    // Eleições do Futuro
-    {
-        id: "8",
-        foregroundColor: '#47AD66',
-        name: "Eleições do Futuro",
-        favicon: "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Feleicoes.svg?alt=media",
-        icon: "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/icons%2Feleicoes.svg?alt=media",
-        options: {
-            pinned: false,
-            maximized: false,
-            minimized: false,
-        },
-        menus: [],
-        meta: {
-            company: "Vsoft Tecnologia",
-            year: 2020
-        },
-        stackPosition: 0,
-        url: "/development",
-    },
     // Easy Proctor
     {
         id: "9",
