@@ -1,0 +1,103 @@
+{
+    "id": "1",
+    "foregroundColor": "#C29359",
+    "stackPosition": 0,
+    "name": "BioPassID Demo",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/icons%2Fbiopass.svg?alt=media",
+    "favicon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Fbiopass.svg?alt=media",
+    "url": "/biopassIdDemo",
+    "options": {
+        "pinned": true,
+        "maximized": false,
+        "minimized": false
+    },
+    "meta": {
+        "header": {
+            "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fbiopass%2Fbackground.jpg?alt=media",
+            "author": "Andrea Piacquadio - Pexels",
+            "source": "https://www.pexels.com/pt-br/foto/foto-de-um-homem-de-camisa-social-branca-segurando-o-telefone-perto-da-janela-859265/"
+        },
+        "company": "Vsoft Tecnologia",
+        "year": 2021,
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fbiopass%2Flogo.svg?alt=media",
+        "description": {
+            "pt": "O BioPass ID é uma moderna plataform de identificação biométrica e processamento baseado em IA. Esta aplicação tem como objetivo demonstrar todas as funcionalidades de extração e captura biomética fornecidos pelo SDK.",
+            "en": ""
+        },
+        "tecnologies": ["xamarin"],
+        "platforms": {
+            "phone": true,
+            "tablet": false,
+            "desktop": false,
+            "web": false
+        },
+        "pictures": {
+            "sm": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fbiopass%2Fsm%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fbiopass%2Fsm%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fbiopass%2Fsm%2F3.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fbiopass%2Fsm%2F4.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fbiopass%2Fsm%2F5.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fbiopass%2Fsm%2F6.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fbiopass%2Fsm%2F7.png?alt=media"
+            ],
+            "md": [],
+            "lg": [],
+            "xl": []
+        },
+        "urls": {
+            "website": "",
+            "googlePlay": "https://play.google.com/store/apps/details?id=com.vsoft.biopassid&hl=pt_BR&gl=US",
+            "appStore": ""
+        },
+        "role": {
+            "pt": "Desenvolvedor front-end",
+            "en": "Front-end developer"
+        },
+        "relatedApps": ["remote", "superPraticoGestor"]
+    },
+    "menus": [
+        {
+            "title": "Inicio",
+            "icon": "home",
+            "options": [
+                {
+                    "title": "Fechar",
+                    "action": ""
+                }
+            ]
+        },
+        {
+            "title": "Janela",
+            "icon": "window",
+            "options": [
+                {
+                    "title": "Minimizar",
+                    "action": ""
+                },
+                {
+                    "title": "Ampliar/Reduzir",
+                    "action": ""
+                }
+            ]
+        },
+        {
+            "title": "Sobre",
+            "icon": "info",
+            "options": [
+                {
+                    "title": "Link do site",
+                    "action": ""
+                },
+                {
+                    "title": "Link na Play Store",
+                    "action": ""
+                },
+                {
+                    "title": "Link na App Store",
+                    "action": ""
+                }
+            ]
+        }
+    ]
+}

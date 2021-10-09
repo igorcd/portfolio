@@ -29,6 +29,7 @@ module.exports = {
             },
             screens: {
                 'max-sm': { 'max': '639px' },
+                'touch': { 'raw': '(pointer: coarse)' },
             },
         },
     },

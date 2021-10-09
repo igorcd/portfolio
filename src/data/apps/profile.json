@@ -1,0 +1,110 @@
+{
+    "id": "-2",
+    "foregroundColor": "#181818",
+    "stackPosition": 0,
+    "name": "Igor Dantas",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Flighteam.svg?alt=media",
+    "favicon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Flighteam.svg?alt=media",
+    "url": "/profile",
+    "options": {
+        "pinned": false,
+        "maximized": false,
+        "minimized": false
+    },
+    "meta": {
+        "header": {
+            "image": "",
+            "author": "",
+            "source": ""
+        },
+        "company": "",
+        "year": 2021,
+        "logo": "",
+        "description": {
+            "pt": "",
+            "en": ""
+        },
+        "tecnologies": [],
+        "owner": "",
+        "platforms": {
+            "phone": false,
+            "tablet": false,
+            "desktop": false,
+            "web": false
+        },
+        "pictures": {
+            "sm": [],
+            "md": [],
+            "lg": [],
+            "xl": []
+        },
+        "urls": {
+            "website": "",
+            "googlePlay": "",
+            "appStore": ""
+        },
+        "role": {
+            "pt": "",
+            "en": ""
+        },
+        "relatedApps": []
+    },
+    "menus": [
+        {
+            "title": "Sobre o desenvolvedor",
+            "icon": "dev",
+            "options": [
+                {
+                    "title": "GitHub",
+                    "action": "() => window.open('https://github.com/Igor4505', '_blank')"
+                },
+                {
+                    "title": "LinkedIn",
+                    "action": "() => window.open('https://github.com/Igor4505', '_blank')"
+                },
+                {
+                    "title": "Medium",
+                    "action": "() => window.open('https://github.com/Igor4505', '_blank')"
+                }
+            ]
+        },
+        {
+            "title": "Sobre o sistema",
+            "icon": "pc",
+            "options": [
+                {
+                    "title": "Arquivo package.json",
+                    "action": ""
+                },
+                {
+                    "title": "Informações técnicas",
+                    "action": ""
+                }
+            ]
+        },
+        {
+            "title": "Feedback",
+            "icon": "feedback",
+            "options": [
+                {
+                    "title": "Enviar sugestão",
+                    "action": ""
+                },
+                {
+                    "title": "Relatar um problema",
+                    "action": ""
+                }
+            ]
+        },
+        {
+            "title": "Contato",
+            "icon": "phone",
+            "options": [
+                {
+                    "title": "Informações de contato",
+                    "action": ""
+                }
+            ]
+        }
+    ]
+}

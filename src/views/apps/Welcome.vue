@@ -45,7 +45,7 @@
 
                 <Text type="headline2" class="mb-3" id="navegando">Navegando entre os apps</Text>
                 <Text class="mb-4">O sistema foi desenvolvivo de forma a simular um sistema operacional, onde cada APP represente um projeto desenvolvido, você pode visualizar todos os projetos abrindo o a “Central de Apps” ou selecionando alguns dos apps fixados.</Text>
-                <img :src="centralApps" class="w-72 max-w-full mx-auto"/>
+                <img alt="Imagem da navegação" :src="centralApps" class="w-72 max-w-full mx-auto"/>
 
                 <Divider class="mt-8 mb-3"/>
 
@@ -55,7 +55,7 @@
                         <Text class="mb-4">Cada app possui um menu com as mais variadas funcionalidades, você pode, por exemplo, maximizar a jenela, ou abrir a sua página na Google Play ou AppStore.</Text>
                     </div>
 
-                    <img :src="menus" class="rounded-xl w-full md:w-80"/>
+                    <img alt="Imagem do menu" :src="menus" class="rounded-xl w-full md:w-80"/>
                 </div>
 
                 <Divider class="mt-8 mb-3"/>

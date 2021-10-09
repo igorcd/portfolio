@@ -6,9 +6,9 @@
 
         <!-- Descrição -->
         <div class="flex-1 overflow-hidden">
-            <p class="text-white font-semibold text-sm whitespace-nowrap overflow-hidden overflow-ellipsis">{{ title }}</p>
+            <p class="title">{{ title }}</p>
             <div class="h-px w-full bg-white/20 my-0.5"></div>
-            <p class="text-white text-xs opacity-50 font-light whitespace-nowrap overflow-hidden overflow-ellipsis">{{ subtitle }}</p>
+            <p class="subtitle">{{ subtitle }}</p>
         </div>
 
         <!-- Sistema -->

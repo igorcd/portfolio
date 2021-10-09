@@ -1,0 +1,101 @@
+{
+    "id": "2",
+    "foregroundColor": "#005961",
+    "stackPosition": 0,
+    "name": "Certfy ID",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/icons%2Fcertfyid.svg?alt=media",
+    "favicon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Fcertfyid.svg?alt=media",
+    "url": "/certfyid",
+    "options": {
+        "pinned": true,
+        "maximized": false,
+        "minimized": false
+    },
+    "meta": {
+        "header": {
+            "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fcertfyid%2Fbackground.jpg?alt=media",
+            "author": "Andrea Piacquadio - Pexels",
+            "source": "https://www.pexels.com/pt-br/foto/mulher-de-camiseta-branca-segurando-um-smartphone-na-frente-do-laptop-914931/"
+        },
+        "company": "Vsoft Tecnologia",
+        "year": 2021,
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fcertfyid%2Flogo.svg?alt=media",
+        "description": {
+            "pt": "O Certfy ID faz parte da suite de produtos Certfy, tem como função a entrega e gerenciamento de documentos de identidade digitais de maneira simples e segura. Atualmente o Certfy ID é responsável pela emissão do RG Digital dos estados da Paraíba e Alagoas.",
+            "en": ""
+        },
+        "tecnologies": ["xamarin", "vue", "tailwind", "typescript"],
+        "platforms": {
+            "phone": true,
+            "tablet": false,
+            "desktop": false,
+            "web": true
+        },
+        "pictures": {
+            "sm": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fcertfyid%2Fsm%2F1.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fcertfyid%2Fsm%2F2.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fcertfyid%2Fsm%2F3.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fcertfyid%2Fsm%2F4.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fcertfyid%2Fsm%2F5.jpg?alt=media"
+            ],
+            "md": [],
+            "lg": [],
+            "xl": []
+        },
+        "urls": {
+            "website": "https://rgdigital.ipc.pb.gov.br/",
+            "googlePlay": "https://play.google.com/store/apps/details?id=br.com.vsoft.certfy.PSPB.MobileRGDigital&hl=pt_BR&gl=US",
+            "appStore": "https://apps.apple.com/br/app/rg-digital-para%C3%ADba/id1569886733"
+        },
+        "role": {
+            "pt": "Desenvolvedor front-end",
+            "en": "Front-end developer"
+        },
+        "relatedApps": ["remote", "superPraticoGestor"]
+    },
+    "menus": [
+        {
+            "title": "Inicio",
+            "icon": "home",
+            "options": [
+                {
+                    "title": "Fechar",
+                    "action": ""
+                }
+            ]
+        },
+        {
+            "title": "Janela",
+            "icon": "window",
+            "options": [
+                {
+                    "title": "Minimizar",
+                    "action": ""
+                },
+                {
+                    "title": "Ampliar/Reduzir",
+                    "action": ""
+                }
+            ]
+        },
+        {
+            "title": "Sobre",
+            "icon": "info",
+            "options": [
+                {
+                    "title": "Link do site",
+                    "action": ""
+                },
+                {
+                    "title": "Link na Play Store",
+                    "action": ""
+                },
+                {
+                    "title": "Link na App Store",
+                    "action": ""
+                }
+            ]
+        }
+    ]
+}

@@ -22,6 +22,7 @@
                 
                 <!-- Avatar -->
                 <img :src="profile"
+                     alt="Avatar do usuário"
                      class="w-52"/>
             </Container>
 
@@ -111,7 +112,7 @@ import frameworks from '../../data/frameworks';
 import apps from '../../data/apps';
 import { profile } from '../../assets/img';
 import { Divider, IconButton, Container, TagContainer, Hexagon, Text, Timeline, TimelineGroup, TimelineItem } from '../../components';
-import AppDTO from '../../dtos/AppDTO';
+import AppModel from '../../models/AppModel';
 
 const Profile = defineComponent({
     components: { Divider, IconButton, Container, TagContainer, Hexagon, Text, Timeline, TimelineGroup, TimelineItem },
@@ -123,7 +124,7 @@ const Profile = defineComponent({
 
         const groupedApps = computed(() => {
             const groups = apps
-                .reduce<{key: number; apps: AppDTO[]}[]>((acc, el) => {
+                .reduce<{key: number; apps: AppModel[]}[]>((acc, el) => {
                 const group = acc.find(g => g.key == el.meta.year);
                 group ?
                     group.apps.push(el)

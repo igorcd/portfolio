@@ -15,7 +15,7 @@
 
             <!-- Logo -->
             <div class="flex items-center absolute lg:static left-1/2 -translate-x-1/2 lg:translate-x-0 px-4 lg:pr-0 lg:!opacity-100 transition-opacity duration-300" :class="{'opacity-0': state.menuOpened}">
-                <img :src="focusedApp.favicon" class="w-6 lg:w-4"/>
+                <img alt="Ícone do aplicativo" :src="focusedApp.favicon" class="w-6 lg:w-4"/>
                 <p class="text-sm lg:text-[0.75rem] text-white font-bold mx-1.5 whitespace-nowrap overflow-hidden overflow-ellipsis">{{ focusedApp.name }}</p>
                 <Divider type="vertical" class="hidden lg:block"/>
             </div>
@@ -54,7 +54,8 @@
 
 <script lang='ts'>
 import { computed, defineComponent, reactive } from 'vue';
-import { WindowControl, Divider, Menu, Clock, IconButton } from '../components';
+import { WindowControl, Divider, Clock, IconButton } from '../components';
+import Menu from './Menu.vue';
 import vm from '../viewModels/AppsViewModel';
 
 const StatusBar = defineComponent({

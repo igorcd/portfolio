@@ -1,7 +1,7 @@
 <template>
     <div class="relative group">
         <!-- Sombra -->
-        <img src="/img/hexagon.svg" class="hexagon-shadow w-18 h-18"/>
+        <img alt="Sombra do ícone" src="/img/hexagon.svg" class="hexagon-shadow w-18 h-18"/>
 
         <div class="w-18 h-18 p-0.5 hexagon absolute top-0 left-0" style="background: #303030">
             <div class="w-full h-full hexagon flex items-center justify-center"

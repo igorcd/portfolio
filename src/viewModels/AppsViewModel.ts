@@ -1,31 +1,32 @@
 import { reactive } from "vue";
-import AppDTO from "../dtos/AppDTO";
-
 // Data
 import apps from '../data/apps';
-import welcomeApp from '../data/welcomeApp';
-import ShortcutDTO from "../dtos/ShortcutDTO";
-import shortcuts from '../data/shortcuts.json';
+import profile from '../data/apps/profile.json';
+import shortcuts from '../data/shortcuts';
+
+// Models e DTOs
+import ShortcutModel from "../models/ShortcutModel";
+import AppModel from "../models/AppModel";
 
 interface AppsViewModelState {
-    apps: AppDTO[];
-    openedApps: AppDTO[];
-    defaultApp: AppDTO;
-    shortcuts: ShortcutDTO[];
+    apps: AppModel[];
+    openedApps: AppModel[];
+    defaultApp: AppModel;
+    shortcuts: ShortcutModel[];
 }
 
 class AppsViewModel {
 
     private state = reactive<AppsViewModelState>({
         apps: apps,
-        openedApps: window.innerWidth < 640 ? [] : [welcomeApp],
-        defaultApp: welcomeApp,
-        shortcuts: shortcuts as ShortcutDTO[]
+        openedApps: [profile],
+        defaultApp: profile,
+        shortcuts: shortcuts as ShortcutModel[]
     });
 
     /** Todos os aplicativos */
     public get apps() {
-        return this.state.apps as AppDTO[];
+        return this.state.apps as AppModel[];
     }
 
     /** Aplicativos abertos */
@@ -46,11 +47,12 @@ class AppsViewModel {
         return [...pinned, ...this.openedApps.filter(el => !pinned.includes(el))];
     }
 
-    /** Atalho */
+    /** Atalhos */
     public get shortcuts() {
         return this.state.shortcuts;
     }
 
+    /** Menus */
     public get menus() {
         return this.state.openedApps
             .filter(el => !el.options.minimized && el.menus.length > 0)
@@ -64,6 +66,7 @@ class AppsViewModel {
     }
 
     // ==== MÉTODOS ====
+
     /** Restaurar tamanho do app */
     public restoreAppSize() {
         this.focusedApp.options.maximized = false;
@@ -93,16 +96,17 @@ class AppsViewModel {
     }
 
     /** Abrir aplicativo */
-    public openApp(app: AppDTO) {
-        const hasApp = this.state.openedApps.find(el => el.id == app.id);
+    public openApp(appId: string) {
+        const hasApp = this.state.openedApps.find(el => el.id == appId);
 
-        if(!hasApp) {
-            app.stackPosition = this.state.openedApps.length;
-            (this.state.openedApps as AppDTO[]).push(app);
+        if(hasApp != null) {
+            this.focusApp(hasApp.stackPosition);
+            return;
         }
-        else {
-            this.focusApp(app.stackPosition);
-        }
+
+        const newApp = apps.find(el => el.id == appId)!;
+        newApp.stackPosition = this.state.openedApps.length;
+        this.state.openedApps.push(newApp);
     }
 
     public closeApp(index: number) {

@@ -1,0 +1,119 @@
+{
+    "id": "9",
+    "foregroundColor": "#FF6C18",
+    "stackPosition": 0,
+    "name": "SuperPrático Gestor",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/icons%2Fgestor.svg?alt=media",
+    "favicon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Fgestor.svg?alt=media",
+    "url": "/gestor",
+    "options": {
+        "pinned": true,
+        "maximized": false,
+        "minimized": false
+    },
+    "meta": {
+        "header": {
+            "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Fbackground.jpg?alt=media",
+            "author": "Justin Hamilton - Pexels",
+            "source": "https://www.pexels.com/pt-br/foto/duas-pessoas-sentadas-na-cadeira-da-frente-142853/"
+        },
+        "company": "Vsoft Tecnologia",
+        "year": 2021,
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Flogo.svg?alt=media",
+        "description": {
+            "pt": "O SuperPrático Gestor é uma plataforma de gerenciamento para Centros de Formaçação de Condutores, através dele é possível acompanhar o desempenho dos alunos, as avaliações dos instrutores e localização dos veículos.",
+            "en": ""
+        },
+        "tecnologies": ["vue", "typescript", "tailwind", "flutter"],
+        "platforms": {
+            "phone": true,
+            "tablet": true,
+            "desktop": false,
+            "web": true
+        },
+        "pictures": {
+            "sm": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Fsm%2F1.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Fsm%2F2.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Fsm%2F3.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Fsm%2F4.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Fsm%2F5.jpg?alt=media"
+            ],
+            "md": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Fmd%2F1.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Fmd%2F2.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Fmd%2F3.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Fmd%2F4.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Fmd%2F5.jpg?alt=media"
+            ],
+            "lg": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Flg%2F1.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Flg%2F2.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Flg%2F3.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Flg%2F4.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Flg%2F5.jpg?alt=media"
+            ],
+            "xl": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Fxl%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Fxl%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Fxl%2F3.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Fxl%2F4.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fgestor%2Fxl%2F5.png?alt=media"
+            ]
+        },
+        "urls": {
+            "website": "https://hml-appgestor.superprati.co/",
+            "googlePlay": "https://play.google.com/store/apps/details?id=br.com.vsoft.superpraticogestor&hl=pt_BR&gl=US",
+            "appStore": "https://apps.apple.com/br/app/superpr%C3%A1tico-gestor/id1334156398"
+        },
+        "role": {
+            "pt": "Desenvolvedor front-end",
+            "en": "Front-end developer"
+        },
+        "relatedApps": ["remote", "superPraticoGestor"]
+    },
+    "menus": [
+        {
+            "title": "Inicio",
+            "icon": "home",
+            "options": [
+                {
+                    "title": "Fechar",
+                    "action": ""
+                }
+            ]
+        },
+        {
+            "title": "Janela",
+            "icon": "window",
+            "options": [
+                {
+                    "title": "Minimizar",
+                    "action": ""
+                },
+                {
+                    "title": "Ampliar/Reduzir",
+                    "action": ""
+                }
+            ]
+        },
+        {
+            "title": "Sobre",
+            "icon": "info",
+            "options": [
+                {
+                    "title": "Link do site",
+                    "action": ""
+                },
+                {
+                    "title": "Link na Play Store",
+                    "action": ""
+                },
+                {
+                    "title": "Link na App Store",
+                    "action": ""
+                }
+            ]
+        }
+    ]
+}

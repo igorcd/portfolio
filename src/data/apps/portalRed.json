@@ -1,0 +1,140 @@
+{
+    "id": "6",
+    "foregroundColor": "#E31E26",
+    "stackPosition": 0,
+    "name": "Portal Red",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/icons%2Fportalred.svg?alt=media",
+    "favicon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Fportalred.svg?alt=media",
+    "url": "/portalRed",
+    "options": {
+        "pinned": true,
+        "maximized": false,
+        "minimized": false
+    },
+    "meta": {
+        "header": {
+            "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fbackground.jpg?alt=media",
+            "author": "Giftpundits.com - Pexels",
+            "source": "https://www.pexels.com/pt-br/foto/pessoa-segurando-um-smartphone-sentado-em-branco-1310532/"
+        },
+        "company": "Red Mobile",
+        "year": 2021,
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Flogo.svg?alt=media",
+        "description": {
+            "pt": "O Portal Red é um sistema que oferece assistência para representantes comerciais da Red Mobile, através dele é possível cadastrar novos pedidos, acompanhar metas, imprimir relatórios e acompanhar todo o faturamento.",
+            "en": ""
+        },
+        "tecnologies": ["vue", "typescript", "tailwind"],
+        "platforms": {
+            "phone": false,
+            "tablet": false,
+            "desktop": false,
+            "web": true
+        },
+        "pictures": {
+            "sm": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fsm%2F1.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fsm%2F2.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fsm%2F3.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fsm%2F4.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fsm%2F5.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fsm%2F6.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fsm%2F7.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fsm%2F8.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fsm%2F9.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fsm%2F10.jpg?alt=media"
+            ],
+            "md": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fmd%2F1.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fmd%2F2.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fmd%2F3.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fmd%2F4.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fmd%2F5.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fmd%2F6.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fmd%2F7.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fmd%2F8.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fmd%2F9.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fmd%2F10.jpg?alt=media"
+            ],
+            "lg": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Flg%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Flg%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Flg%2F3.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Flg%2F4.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Flg%2F5.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Flg%2F6.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Flg%2F7.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Flg%2F8.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Flg%2F9.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Flg%2F10.png?alt=media"
+            ],
+            "xl": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fxl%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fxl%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fxl%2F3.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fxl%2F4.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fxl%2F5.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fxl%2F6.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fxl%2F7.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fxl%2F8.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fxl%2F9.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fxl%2F10.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FportalRed%2Fxl%2F11.png?alt=media"
+            ]
+        },
+        "urls": {
+            "website": "https://portalred.redmobile.com.br/",
+            "googlePlay": "",
+            "appStore": ""
+        },
+        "role": {
+            "pt": "Desenvolvedor front-end",
+            "en": "Front-end developer"
+        },
+        "relatedApps": ["remote", "superPraticoGestor"]
+    },
+    "menus": [
+        {
+            "title": "Inicio",
+            "icon": "home",
+            "options": [
+                {
+                    "title": "Fechar",
+                    "action": ""
+                }
+            ]
+        },
+        {
+            "title": "Janela",
+            "icon": "window",
+            "options": [
+                {
+                    "title": "Minimizar",
+                    "action": ""
+                },
+                {
+                    "title": "Ampliar/Reduzir",
+                    "action": ""
+                }
+            ]
+        },
+        {
+            "title": "Sobre",
+            "icon": "info",
+            "options": [
+                {
+                    "title": "Link do site",
+                    "action": ""
+                },
+                {
+                    "title": "Link na Play Store",
+                    "action": ""
+                },
+                {
+                    "title": "Link na App Store",
+                    "action": ""
+                }
+            ]
+        }
+    ]
+}

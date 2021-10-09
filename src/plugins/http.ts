@@ -8,7 +8,7 @@ export const ipStackClient = axios.create({
 });
 
 export const openWeatherMapClient = axios.create({
-    baseURL: 'http://api.openweathermap.org/data/2.5',
+    baseURL: 'https://api.openweathermap.org/data/2.5',
     params: {
         'appid': import.meta.env.VITE_OPEN_WEATHER_MAP_KEY,
         'units': 'metric'

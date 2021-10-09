@@ -3,8 +3,7 @@ import MainView from '/src/views/MainView.vue';
 
 
 // Apps
-import UnderDevelopment from '/src/views/apps/UnderDevelopment.vue';
-// import Welcome from '/src/views/apps/Welcome.vue';
+import GenericApp from '/src/views/apps/GenericApp.vue';
 import Profile from '../views/apps/Profile.vue';
 
 const router = createRouter({
@@ -16,15 +15,56 @@ const router = createRouter({
             component: MainView,
         },
         {
-            path: '/development',
-            name: 'development',
-            component: UnderDevelopment
+            path: '/profile',
+            name: 'profile',
+            component: Profile
+        },
+        // === APPS ===
+        {
+            path: '/biopassIdDemo',
+            name: 'BioPassID Demo',
+            component: GenericApp
         },
         {
-            path: '/welcome',
-            name: 'welcome',
-            component: Profile
-        }
+            path: '/certfyId',
+            name: 'Certfy ID',
+            component: GenericApp
+        },
+        {
+            path: '/easyProctor',
+            name: 'Easy Proctor',
+            component: GenericApp
+        },
+        {
+            path: '/examePratico',
+            name: 'Exame Prático',
+            component: GenericApp
+        },
+        {
+            path: '/pilotar',
+            name: 'Pilotar',
+            component: GenericApp
+        },
+        {
+            path: '/portalRed',
+            name: 'Portal Red',
+            component: GenericApp
+        },
+        {
+            path: '/remote',
+            name: 'Remote',
+            component: GenericApp
+        },
+        {
+            path: '/superAula',
+            name: 'Super Aula',
+            component: GenericApp
+        },
+        {
+            path: '/gestor',
+            name: 'SuperPrático Gestor',
+            component: GenericApp
+        },
     ]
 });
 export default router;

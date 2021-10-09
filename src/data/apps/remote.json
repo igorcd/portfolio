@@ -1,0 +1,104 @@
+{
+    "id": "7",
+    "foregroundColor": "#015B69",
+    "stackPosition": 0,
+    "name": "Remote",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/icons%2Fremote.svg?alt=media",
+    "favicon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Fremote.svg?alt=media",
+    "url": "/remote",
+    "options": {
+        "pinned": false,
+        "maximized": false,
+        "minimized": false
+    },
+    "meta": {
+        "header": {
+            "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fremote%2Fbackground.jpg?alt=media",
+            "author": "Mikhail Nilov - Pexels",
+            "source": "https://www.pexels.com/pt-br/foto/comunicacao-conversa-divulgacao-conexao-7682352/"
+        },
+        "company": "Vsoft Tecnologia",
+        "year": 2020,
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fremote%2Flogo.svg?alt=media",
+        "description": {
+            "pt": "A plataforma Remote oferece uma experiência de atendimento digital, onde o usuário pode enviar imagens, documentos, formulários, assinatura, bem como realizar a sua identificação e validação biométrica.",
+            "en": ""
+        },
+        "tecnologies": ["vue", "typescript", "tailwind", "xamarin", "firebase"],
+        "platforms": {
+            "phone": true,
+            "tablet": false,
+            "desktop": false,
+            "web": true
+        },
+        "pictures": {
+            "sm": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fremote%2Fsm%2F1.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fremote%2Fsm%2F2.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fremote%2Fsm%2F3.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fremote%2Fsm%2F4.jpg?alt=media"
+            ],
+            "md": [],
+            "lg": [],
+            "xl": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fremote%2Fxl%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fremote%2Fxl%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fremote%2Fxl%2F3.png?alt=media"
+            ]
+        },
+        "urls": {
+            "website": "https://remotedesk.certfy.tech/",
+            "googlePlay": "https://play.google.com/store/apps/details?id=com.vsoft.certfyremote&hl=pt",
+            "appStore": "https://apps.apple.com/br/app/remote-atendimento-seguro/id1512014546"
+        },
+        "role": {
+            "pt": "Desenvolvedor front-end",
+            "en": "Front-end developer"
+        },
+        "relatedApps": ["remote", "superPraticoGestor"]
+    },
+    "menus": [
+        {
+            "title": "Inicio",
+            "icon": "home",
+            "options": [
+                {
+                    "title": "Fechar",
+                    "action": ""
+                }
+            ]
+        },
+        {
+            "title": "Janela",
+            "icon": "window",
+            "options": [
+                {
+                    "title": "Minimizar",
+                    "action": ""
+                },
+                {
+                    "title": "Ampliar/Reduzir",
+                    "action": ""
+                }
+            ]
+        },
+        {
+            "title": "Sobre",
+            "icon": "info",
+            "options": [
+                {
+                    "title": "Link do site",
+                    "action": ""
+                },
+                {
+                    "title": "Link na Play Store",
+                    "action": ""
+                },
+                {
+                    "title": "Link na App Store",
+                    "action": ""
+                }
+            ]
+        }
+    ]
+}

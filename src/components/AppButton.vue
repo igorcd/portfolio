@@ -1,6 +1,6 @@
 <template>
 
-    <button class="w-12 h-12 p-0.5 origin-bottom transition-all duration-300 relative active:scale-105 sm:active:scale-125 sm:hover:scale-110 group inline-block mx-0.5 app-button"
+    <button class="app-button group"
             :class="{'sm:-translate-y-1 scale-105 sm:scale-110]': focused}">
 
         <!-- Borda -->
@@ -32,12 +32,12 @@
 
 <script lang='ts'>
 import { computed, defineComponent, onMounted, PropType } from 'vue';
-import AppDTO from '../dtos/AppDTO';
+import AppModel from '../models/AppModel';
 
 const AppButton = defineComponent({
     props: {
         app: {
-            type: Object as PropType<AppDTO>,
+            type: Object as PropType<AppModel>,
             required: true
         },
         opened: {
@@ -69,7 +69,4 @@ export default AppButton;
 </script>
 
 <style>
-.app-button {
-    scroll-snap-align: start;
-}
 </style>

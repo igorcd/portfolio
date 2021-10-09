@@ -1,0 +1,102 @@
+{
+    "id": "3",
+    "foregroundColor": "#39596B",
+    "stackPosition": 0,
+    "name": "Easy Proctor",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/icons%2Feasyproctor.svg?alt=media",
+    "favicon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Feasyproctor.svg?alt=media",
+    "url": "/easyproctor",
+    "options": {
+        "pinned": false,
+        "maximized": false,
+        "minimized": false
+    },
+    "meta": {
+        "header": {
+            "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FeasyProctor%2Fbackground.jpg?alt=media",
+            "author": "Pew Nguyen - Pexels",
+            "source": "https://www.pexels.com/pt-br/foto/pessoa-escrevendo-enquanto-usa-o-telefone-239548/"
+        },
+        "company": "Iaris",
+        "year": 2020,
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FeasyProctor%2Flogo.svg?alt=media",
+        "description": {
+            "pt": "O EasyProctor oferece uma solução de monitoramento da execução de exames online, combina análise em tempo real baseada em Inteligência Artificial com análise humana.",
+            "en": ""
+        },
+        "tecnologies": ["vue", "typescript", "tailwind"],
+        "platforms": {
+            "phone": true,
+            "tablet": false,
+            "desktop": false,
+            "web": true
+        },
+        "pictures": {
+            "sm": [],
+            "md": [],
+            "lg": [],
+            "xl": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FeasyProctor%2Fxl%2F1.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FeasyProctor%2Fxl%2F2.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FeasyProctor%2Fxl%2F3.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FeasyProctor%2Fxl%2F4.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FeasyProctor%2Fxl%2F5.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FeasyProctor%2Fxl%2F6.jpg?alt=media"
+            ]
+        },
+        "urls": {
+            "website": "https://admin.easyproctor.tech/",
+            "googlePlay": "",
+            "appStore": ""
+        },
+        "role": {
+            "pt": "Desenvolvedor front-end",
+            "en": "Front-end developer"
+        },
+        "relatedApps": ["remote", "superPraticoGestor"]
+    },
+    "menus": [
+        {
+            "title": "Inicio",
+            "icon": "home",
+            "options": [
+                {
+                    "title": "Fechar",
+                    "action": ""
+                }
+            ]
+        },
+        {
+            "title": "Janela",
+            "icon": "window",
+            "options": [
+                {
+                    "title": "Minimizar",
+                    "action": ""
+                },
+                {
+                    "title": "Ampliar/Reduzir",
+                    "action": ""
+                }
+            ]
+        },
+        {
+            "title": "Sobre",
+            "icon": "info",
+            "options": [
+                {
+                    "title": "Link do site",
+                    "action": ""
+                },
+                {
+                    "title": "Link na Play Store",
+                    "action": ""
+                },
+                {
+                    "title": "Link na App Store",
+                    "action": ""
+                }
+            ]
+        }
+    ]
+}

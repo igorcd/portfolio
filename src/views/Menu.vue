@@ -34,16 +34,16 @@
 
 <script lang='ts'>
 import { defineComponent, PropType, reactive } from 'vue';
-import Icon from './Icon.vue';
+import Icon from '../components/Icon.vue';
 
 import clickOut from '../directives/clickOut';
-import Option from '../interfaces/Option';
-import AppDTO from '../dtos/AppDTO';
+import Option from '../models/OptionModel';
+import AppModel from '../models/AppModel';
 const Menu = defineComponent({
     components: { Icon },
     props: {
         focusedApp: {
-            type: Object as PropType<AppDTO>,
+            type: Object as PropType<AppModel>,
             required: true
         }
     },
@@ -55,7 +55,8 @@ const Menu = defineComponent({
 
         const selectMenu = (option: Option) => {
             state.selectedMenu = '';
-            option.action(props.focusedApp.ref);
+            const action = Function("return " + option.action)();
+            action();
         };
 
         return { state, selectMenu };

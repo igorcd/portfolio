@@ -1,0 +1,100 @@
+{
+    "id": "4",
+    "foregroundColor": "#2D2D2D",
+    "stackPosition": 0,
+    "name": "Exame Prático",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/icons%2Fexamepratico.svg?alt=media",
+    "favicon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Fexamepratico.svg?alt=media",
+    "url": "/examePratico",
+    "options": {
+        "pinned": false,
+        "maximized": false,
+        "minimized": false
+    },
+    "meta": {
+        "header": {
+            "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FexamePratico%2Fbackground.jpg?alt=media",
+            "author": "Cottonbro - Pexels",
+            "source": "https://www.pexels.com/pt-br/foto/auto-automotivo-automotor-automobilistico-4606336/"
+        },
+        "company": "Vsoft Tecnologia",
+        "year": 2020,
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FexamePratico%2Flogo.svg?alt=media",
+        "description": {
+            "pt": "O SuperPrático Exame Prático é uma solução focada no monitoramento de exames de direção veicular. Utilizando um módulo de sistemas embarcados no próprio veículo, o examinador pode acompanhar por um dispositivo móvel, em tempo real, as ações feitas pelo candidato durante a execução do exame.",
+            "en": ""
+        },
+        "tecnologies": ["xamarin", "vue", "typescript"],
+        "platforms": {
+            "phone": false,
+            "tablet": true,
+            "desktop": false,
+            "web": false
+        },
+        "pictures": {
+            "sm": [],
+            "md": [],
+            "lg": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FexamePratico%2Flg%2F1.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FexamePratico%2Flg%2F2.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FexamePratico%2Flg%2F3.jpg?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FexamePratico%2Flg%2F4.jpg?alt=media"
+            ],
+            "xl": []
+        },
+        "urls": {
+            "website": "",
+            "googlePlay": "",
+            "appStore": ""
+        },
+        "role": {
+            "pt": "Desenvolvedor front-end",
+            "en": "Front-end developer"
+        },
+        "relatedApps": ["remote", "superPraticoGestor"]
+    },
+    "menus": [
+        {
+            "title": "Inicio",
+            "icon": "home",
+            "options": [
+                {
+                    "title": "Fechar",
+                    "action": ""
+                }
+            ]
+        },
+        {
+            "title": "Janela",
+            "icon": "window",
+            "options": [
+                {
+                    "title": "Minimizar",
+                    "action": ""
+                },
+                {
+                    "title": "Ampliar/Reduzir",
+                    "action": ""
+                }
+            ]
+        },
+        {
+            "title": "Sobre",
+            "icon": "info",
+            "options": [
+                {
+                    "title": "Link do site",
+                    "action": ""
+                },
+                {
+                    "title": "Link na Play Store",
+                    "action": ""
+                },
+                {
+                    "title": "Link na App Store",
+                    "action": ""
+                }
+            ]
+        }
+    ]
+}

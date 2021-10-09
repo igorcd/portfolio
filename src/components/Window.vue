@@ -1,7 +1,8 @@
 <template>
     <div class="window max-sm:!left-0 max-sm:!top-0 max-sm:!w-screen max-sm:!h-screen max-sm:rounded-none max-sm:border-none"
          :class="[{'window-maximized': state.maximized},
-                  {'window-minimized': minimized},]"
+                  {'window-minimized': minimized},
+                  {'backdrop-blur-lg': inFocus}]"
          ref="windowRef"
          @mousedown="$emit('focus')"
          :style="[
@@ -54,10 +55,17 @@
                                class="max-sm:hidden"/>
             </header>
 
-            
-            <iframe :src="url" class="w-full h-full rounded-md flex-1 " 
+            <transition name="fade">
+                <div class="w-full h-full flex items-center justify-center absolute" v-if="state.loading">
+                    <img alt="Ícone do aplicativo" :src="splashScreen" class="w-64"/>
+                </div>
+            </transition>
+
+            <iframe :src="url" class="w-full h-full rounded-md flex-1 opacity-0 transition-opacity duration-300"
+                    :aria-label="'Conteúdo do aplicativo ' + url "
+                    @load="state.loading = false"
                     ref="iframeRef"
-                    :class="{'pointer-events-none': state.resizing}"></iframe>
+                    :class="{'pointer-events-none': state.resizing, 'opacity-100': !state.loading}"></iframe>
 
         </div>
     </div>
@@ -87,6 +95,14 @@ const Window = defineComponent({
         url: {
             type: String,
             required: true
+        },
+        splashScreen: {
+            type: String,
+            required: true
+        },
+        inFocus: {
+            type: Boolean,
+            default: false
         }
     },
     setup(props, context) {
@@ -94,6 +110,7 @@ const Window = defineComponent({
         const iframeRef = ref<HTMLIFrameElement | null>(null);
 
         const state = reactive({
+            loading: true,
             resizing: false,
             maximized: props.maximized,
             width: window.innerWidth <= 1536 ? 700 : 870,
@@ -267,8 +284,14 @@ const Window = defineComponent({
         });
 
         onMounted(() => {
-            iframeRef.value?.contentWindow?.addEventListener('mousedown', () => context.emit('focus'));
+            const contentWindow = iframeRef.value?.contentWindow;
+
+            contentWindow?.addEventListener('mousedown', () => {
+                context.emit('focus');
+                document.dispatchEvent(new Event("mousedown"));
+            });
         });
+
 
 
         return { state, bottomHandlerListener, handlerListener, windowRef, iframeRef };

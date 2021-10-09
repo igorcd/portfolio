@@ -7,7 +7,7 @@
         <StatusBar  :class="{'opacity-0': state.collectionOpened}"/>
 
         <!-- Widget Data -->
-        <div class="absolute w-full sm:w-auto sm:right-9 top-32 sm:top-20 flex flex-col items-center sm:items-end">
+        <div class="absolute w-full sm:w-auto sm:right-9 top-24 sm:top-20 flex flex-col items-center sm:items-end">
             <p class="text-white text-2xl">{{ date }}</p>
             <div class="flex items-center mb-2">
                 <p class="text-white font-bold text-lg">{{ state.temperature || '-'}}°</p>
@@ -28,6 +28,8 @@
                     :index="app.stackPosition"
                     :url="app.url"
                     :class="{'opacity-0': state.collectionOpened}"
+                    :splashScreen="app.icon"
+                    :inFocus="app.id == vm.focusedApp.id"
                     v-model:maximized="app.options.maximized"
                     v-model:minimized="app.options.minimized"
                     @focus="vm.focusApp(app.stackPosition)"
@@ -43,20 +45,21 @@
                           :class="{'opacity-0': state.collectionOpened}">
                           
             <AppButton v-for="app in vm.taskBarApps" :key="app.id"
+                       :aria-label="'Aplicativo ' + app.name"
                        :app="app" 
                        :opened="vm.openedApps.includes(app)"
                        :focused="vm.focusedApp.id == app.id"
-                       @pressed="openApp(app)"/>
+                       @pressed="openApp(app.id)"/>
         </transition-group>
 
         <transition name="fade">
             <CollectionView v-if="state.collectionOpened"
                             @close="state.collectionOpened = false"
-                            @openApp="vm.openApp($event)"/>
+                            @openApp="vm.openApp($event.id)"/>
 
         </transition>
 
-        <div class="flex sm:flex-col flex-wrap h-screen content-end sm:content-start pb-40 py-20 px-4 sm:px-12 gap-4">
+        <div class="hidden sm:flex flex-col flex-wrap h-screen content-start py-20 px-12 gap-4">
             <Shortcut v-for="shortcut in shortcuts" :key="shortcut.title" :shortcut="shortcut"/>
         </div>
     </div>
@@ -73,7 +76,6 @@ import { titleCase } from '../utils/stringFunctions';
 import IpStackService from '../services/ipStackService';
 import openWeatherService from '../services/openWeatherService';
 import CollectionView from './collection/CollectionView.vue';
-import AppDTO from '../dtos/AppDTO';
 
 const MainView = defineComponent({
     components: { AppButton, Window, StatusBar, Icon, CollectionView, Shortcut },
@@ -103,8 +105,8 @@ const MainView = defineComponent({
             }
         };
 
-        const openApp = (app: AppDTO) => {
-            app.id == '-3' ? state.collectionOpened = true : vm.openApp(app);
+        const openApp = (appId: string) => {
+            appId == '-3' ? state.collectionOpened = true : vm.openApp(appId);
         };
 
         onMounted(() => getWeatherForecast());

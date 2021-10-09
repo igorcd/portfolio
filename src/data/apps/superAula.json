@@ -1,0 +1,95 @@
+{
+    "id": "8",
+    "foregroundColor": "#652D90",
+    "stackPosition": 0,
+    "name": "Super Aula",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/icons%2Fsuperaula.svg?alt=media",
+    "favicon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Fsuperaula.svg?alt=media",
+    "url": "/superaula",
+    "options": {
+        "pinned": false,
+        "maximized": false,
+        "minimized": false
+    },
+    "meta": {
+        "header": {
+            "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FsuperAula%2Fbackground.jpg?alt=media",
+            "author": "SHVETS production - Pexels",
+            "source": "https://www.pexels.com/pt-br/foto/adulto-loiro-estante-prateleira-7516347/"
+        },
+        "company": "Vsoft Tecnologia",
+        "year": 2020,
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FsuperAula%2Flogo.svg?alt=media",
+        "description": {
+            "pt": "O SuperAula é uma solução para execução de aulas teóricas em Autoescolas na modalidade EPC (Educação Presencial Conectada). Esta modalidade permite que aulas sejam realizadas no mesmo horário, com o mesmo conteúdo e mesmo professor da respectiva disciplina, sem qualquer corte de dia letivo, perda de carga horária ou conteúdo. ",
+            "en": ""
+        },
+        "tecnologies": ["vue", "typescript"],
+        "platforms": {
+            "phone": false,
+            "tablet": false,
+            "desktop": false,
+            "web": true
+        },
+        "pictures": {
+            "sm": [],
+            "md": [],
+            "lg": [],
+            "xl": []
+        },
+        "urls": {
+            "website": "",
+            "googlePlay": "",
+            "appStore": ""
+        },
+        "role": {
+            "pt": "Desenvolvedor front-end",
+            "en": "Front-end developer"
+        },
+        "relatedApps": ["remote", "superPraticoGestor"]
+    },
+    "menus": [
+        {
+            "title": "Inicio",
+            "icon": "home",
+            "options": [
+                {
+                    "title": "Fechar",
+                    "action": ""
+                }
+            ]
+        },
+        {
+            "title": "Janela",
+            "icon": "window",
+            "options": [
+                {
+                    "title": "Minimizar",
+                    "action": ""
+                },
+                {
+                    "title": "Ampliar/Reduzir",
+                    "action": ""
+                }
+            ]
+        },
+        {
+            "title": "Sobre",
+            "icon": "info",
+            "options": [
+                {
+                    "title": "Link do site",
+                    "action": ""
+                },
+                {
+                    "title": "Link na Play Store",
+                    "action": ""
+                },
+                {
+                    "title": "Link na App Store",
+                    "action": ""
+                }
+            ]
+        }
+    ]
+}
