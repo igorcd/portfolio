@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import MainView from '/src/views/MainView.vue';
 
-
 // Apps
 import GenericApp from '/src/views/apps/GenericApp.vue';
 import Profile from '../views/apps/Profile.vue';

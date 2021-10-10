@@ -233,7 +233,7 @@ const UnderDevelopment = defineComponent({
         const { name } = useRoute();
 
         // Variáveis computadas
-        const app = computed(() => apps.find(el => el.name == name));
+        const app = computed(() => apps.find(el => el.name == name)!);
 
         /** Pegar o tamanho de tela default */
         const getDefaultScreenSize = () => {

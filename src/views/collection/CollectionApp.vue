@@ -17,14 +17,14 @@
 
 <script lang='ts'>
 import { defineComponent, onBeforeUnmount, onMounted, PropType } from 'vue';
-import AppDTO from '../../dtos/AppDTO';
+import AppModel from '../../models/AppModel';
 import { Text } from '../../components';
 
 const CollectionApp = defineComponent({
     components: { Text },
     props: {
         app: {
-            type: Object as PropType<AppDTO>,
+            type: Object as PropType<AppModel>,
             required: true
         }
     },

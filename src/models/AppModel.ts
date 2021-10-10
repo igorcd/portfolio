@@ -1,49 +1,54 @@
-import MenuModel from "./MenuModel";
+import MenuModel from './MenuModel';
 
 export default interface AppModel {
     id: string;
     foregroundColor: string;
     stackPosition: number;
-    url: string;
     name: string;
     icon: string;
     favicon: string;
-    menus: MenuModel[];
+    url: string;
     options: {
-        maximized: boolean;
-        minimized: boolean;
         pinned: boolean;
-    }
+        maximized: boolean;
+        minimized: boolean
+    };
     meta: {
+        header: {
+            image: string;
+            author: string;
+            source: string;
+        };
+        company: string;
+        year: number;
         logo: string;
         description: {
             pt: string;
             en: string;
         };
         tecnologies: string[];
-        year: number;
-        company: string;
         platforms: {
             phone: boolean;
             tablet: boolean;
             desktop: boolean;
-            web: boolean;
-        }
+            web: boolean
+        };
         pictures: {
             sm: string[];
             md: string[];
             lg: string[];
             xl: string[];
-        },
+        };
+        urls: {
+            website: string;
+            googlePlay: string;
+            appStore: string;
+        };
         role: {
             pt: string;
             en: string;
-        }
-        urls: {
-            website: string,
-            googlePlay: string,
-            appStore: string
-        },
+        };
         relatedApps: string[]
-    },
+    };
+    menus: MenuModel[]
 }
