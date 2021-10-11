@@ -125,10 +125,10 @@ const Profile = defineComponent({
         const groupedApps = computed(() => {
             const groups = apps
                 .reduce<{key: number; apps: AppModel[]}[]>((acc, el) => {
-                const group = acc.find(g => g.key == el.meta.year);
+                const group = acc.find(g => g.key == el.meta!.year);
                 group ?
                     group.apps.push(el)
-                    : acc.push({ key: el.meta.year, apps: [el] });
+                    : acc.push({ key: el.meta!.year, apps: [el] });
 
                 return acc;
              

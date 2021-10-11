@@ -1,9 +1,9 @@
 import axios from "axios";
 
-export const ipStackClient = axios.create({
-    baseURL: 'http://api.ipstack.com',
+export const abstractApiClient = axios.create({
+    baseURL: 'https://ipgeolocation.abstractapi.com/v1/',
     params: {
-        'access_key': import.meta.env.VITE_IPSTACK_KEY
+        'api_key': import.meta.env.VITE_ABSTRACTAPI_KEY
     }
 });
 

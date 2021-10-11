@@ -193,7 +193,7 @@
             </TagContainer>
 
             <div class="flex items-center space-x-4 px-8">
-                <div class="w-12 h-12 rounded-full bg-gray-500" v-for="app in relatedApps" :key="app.name"></div>
+                <button class="w-12 h-12 rounded-full bg-center bg-contain bg-no-repeat" :style="{'background-image': `url('${app.icon}')`, 'background-color': app.foregroundColor}" v-for="app in relatedApps" :key="app.name"></button>
             </div>
         </Container>
     
@@ -205,7 +205,7 @@
                      class="w-[calc(100%-16px)] h-[calc(100%-30px)] mx-auto object-contain" 
                      :src="state.selectedImage"/>
 
-                <button class="w-10 h-10 bg-black/12 flex items-center justify-center absolute top-4 left-4" @click="state.imageOpened = false">
+                <button class="w-10 h-10 bg-black/12 flex items-center justify-center absolute top-4 left-4 bg-black rounded-full" @click="state.imageOpened = false">
                     <Icon icon="times" color="white" size="1.5rem"/>
                 </button>
             </div>
@@ -215,9 +215,9 @@
 
 <script lang='ts'>
 import { computed, defineComponent, reactive } from 'vue';
-import { useRoute } from 'vue-router';
 import { Container, Text, TagContainer, Button, Icon, Divider, IconButton, Carousel } from '../../components';
 import apps from '../../data/apps';
+import AppModel from '../../models/AppModel';
 
 interface GenericAppState {
     deviceSize: 'sm' | 'md' | 'lg' | 'xl',
@@ -229,21 +229,18 @@ const UnderDevelopment = defineComponent({
     components: { Container, Text, TagContainer, Button, Icon, IconButton, Divider, Carousel },
     setup() {
         
-        // Hooks
-        const { name } = useRoute();
-
         // Variáveis computadas
-        const app = computed(() => apps.find(el => el.name == name)!);
+        const app = (window as any).app as AppModel;
 
         /** Pegar o tamanho de tela default */
         const getDefaultScreenSize = () => {
-            if(app.value!.meta.pictures.xl.length > 0) {
+            if(app.meta!.pictures.xl.length > 0) {
                 return "xl";
             }
-            else if(app.value!.meta.pictures.lg.length > 0) {
+            else if(app.meta!.pictures.lg.length > 0) {
                 return "lg";
             }
-            else if(app.value!.meta.pictures.md.length > 0) {
+            else if(app.meta!.pictures.md.length > 0) {
                 return "md";
             }
             else {
@@ -261,7 +258,7 @@ const UnderDevelopment = defineComponent({
         // Variáveis computadas
 
         /** Aplicativos relacionados */
-        const relatedApps = computed(() => apps.filter(el => app.value?.meta.relatedApps.includes(el.name))) || [];
+        const relatedApps = computed(() => apps.filter(el => app.meta!.relatedApps.includes(el.name))) || [];
 
         // Métodos
         const selectImage = (url: string) => {

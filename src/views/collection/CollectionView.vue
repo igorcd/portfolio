@@ -5,7 +5,7 @@
             <Button class="w-8" @click="$emit('close')">
                 <Icon icon="arrowLeft" color="white" class="opacity-70" size="1.5rem"/>
             </Button>
-            <SearchInput/>
+            <SearchInput placeholder="Pesquisar um aplicativo" v-model="search"/>
         </div>         
 
         <div class="mx-auto max-w-2xl grid grid-cols-4 md:grid-cols-5  md:gap-x-10 gap-y-8 md:gap-y-14 px-3">
@@ -13,23 +13,33 @@
                            @click="$emit('openApp', app); $emit('close')"
                            class="collection-app opacity-0"
                            :style="{'animation-delay': `${50 * index}ms`}"/>
+
             
         </div>
+        <Text type="body" class="mx-auto text-center" v-if="allApps.length == 0">Nenhum aplicativo encontrado</Text>
     </div>
 </template>
 
 <script lang='ts'>
-import { computed, defineComponent } from 'vue';
-import { Icon, SearchInput, Button } from '../../components';
+import { computed, defineComponent, ref } from 'vue';
+import { Icon, SearchInput, Button, Text } from '../../components';
 import CollectionApp from './CollectionApp.vue';
 
 import apps from '../../data/apps';
 
 const CollectionView = defineComponent({
-    components: { SearchInput, CollectionApp, Icon, Button },
+    components: { SearchInput, CollectionApp, Icon, Button, Text },
     setup() {
-        const allApps = computed(() => apps.filter(app => app.id != '-3'));
-        return { allApps };
+        const search = ref("");
+
+        const allApps = computed(() =>  {
+            return search.value.length > 0
+                ? apps.filter(app => app.name.toLowerCase().includes(search.value.toLowerCase()) && app.id != '-3')
+                : apps.filter(app => app.id != '-3');
+        });
+
+
+        return { allApps, search };
     }
 });
 

@@ -20,3 +20,4 @@ export { default as Button } from './Button.vue';
 export { default as Shortcut } from './Shortcut.vue';
 export { default as AspectRatioBox } from './AspectRatioBox.vue';
 export { default as Carousel } from './Carousel.vue';
+export { default as Tab } from './Tab.vue';

@@ -18,12 +18,13 @@
 
         <!-- Créditos imagem -->
         <div class="absolute w-full sm:w-auto sm:right-9 bottom-32 sm:bottom-72 flex flex-col items-center sm:items-end">
-            <p class="text-xs text-white font-light opacity-80">Foto por Ian Beckley</p>
+            <a class="text-xs text-white font-light opacity-80" target="_blank" href="https://www.pexels.com/pt-br/foto/fotografia-aerea-da-formacao-rochosa-2440079/">Foto por Ian Beckley</a>
         </div>
 
         <!-- Apps -->
         <transition-group name="app">
             <Window v-for="(app, index) in vm.openedApps" 
+                    :app="app"
                     :key="app.id"
                     :index="app.stackPosition"
                     :url="app.url"
@@ -66,16 +67,20 @@
 </template>
 
 <script lang='ts'>
-import format from 'date-fns/format/index';
-import { pt } from 'date-fns/locale';
 import { computed, defineComponent, onMounted, reactive } from 'vue';
-import { AppButton, Window, Icon, Shortcut } from '../components';
-import vm from '../viewModels/AppsViewModel';
-import StatusBar from './StatusBar.vue';
+import format from 'date-fns/format';
+import { pt } from 'date-fns/locale';
 import { titleCase } from '../utils/stringFunctions';
-import IpStackService from '../services/ipStackService';
-import openWeatherService from '../services/openWeatherService';
+
+// Componentes
+import { AppButton, Window, Icon, Shortcut } from '../components';
+import StatusBar from './StatusBar.vue';
 import CollectionView from './collection/CollectionView.vue';
+
+// Serviços e DTOS
+import vm from '../viewModels/AppsViewModel';
+import ipService from '../services/ipService';
+import openWeatherService from '../services/openWeatherService';
 
 const MainView = defineComponent({
     components: { AppButton, Window, StatusBar, Icon, CollectionView, Shortcut },
@@ -94,7 +99,7 @@ const MainView = defineComponent({
         const shortcuts = computed(() => vm.shortcuts);
         const getWeatherForecast = async () => {
             try {
-                const [request] = IpStackService.getCurrentIp();
+                const [request] = ipService.getCurrentIp();
                 const coordenates = await request;
 
                 const [weatherRequest] = openWeatherService.getCurrentWeather({ lat: coordenates.latitude, lon: coordenates.longitude });

@@ -72,7 +72,8 @@
 </template>
 
 <script lang='ts'>
-import { defineComponent, onMounted, reactive, ref, watch } from 'vue';
+import { defineComponent, onMounted, PropType, reactive, ref, watch } from 'vue';
+import AppModel from '../models/AppModel';
 import WindowControl from './WindowControl.vue';
 
 type Handlers = 'top' | 'right' | 'left' | 'bottom' | 'bottom-right' | 'bottom-left' | 'top-left' | 'top-right' | 'header';
@@ -103,6 +104,10 @@ const Window = defineComponent({
         inFocus: {
             type: Boolean,
             default: false
+        },
+        app: {
+            type: Object as PropType<AppModel>,
+            required: true
         }
     },
     setup(props, context) {
@@ -285,6 +290,7 @@ const Window = defineComponent({
 
         onMounted(() => {
             const contentWindow = iframeRef.value?.contentWindow;
+            (contentWindow as any).app = props.app;
 
             contentWindow?.addEventListener('mousedown', () => {
                 context.emit('focus');

@@ -60,11 +60,11 @@
                 },
                 {
                     "title": "LinkedIn",
-                    "action": "() => window.open('https://github.com/Igor4505', '_blank')"
+                    "action": "() => window.open('https://www.linkedin.com/in/igor-dantas64/', '_blank')"
                 },
                 {
                     "title": "Medium",
-                    "action": "() => window.open('https://github.com/Igor4505', '_blank')"
+                    "action": "() => window.open('https://medium.com/@igor-dantas64', '_blank')"
                 }
             ]
         },
@@ -74,11 +74,11 @@
             "options": [
                 {
                     "title": "Arquivo package.json",
-                    "action": ""
+                    "action": "(vm) => vm.openDocument('packages')"
                 },
                 {
                     "title": "Informações técnicas",
-                    "action": ""
+                    "action": "(vm) => vm.openDocument('info')"
                 }
             ]
         },
@@ -102,7 +102,7 @@
             "options": [
                 {
                     "title": "Informações de contato",
-                    "action": ""
+                    "action": "(vm) => vm.openDocument('contact')"
                 }
             ]
         }

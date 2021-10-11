@@ -1,8 +1,12 @@
 import { reactive } from "vue";
+
 // Data
 import apps from '../data/apps';
 import profile from '../data/apps/profile.json';
 import shortcuts from '../data/shortcuts';
+import documents from "../documents";
+// Tools
+import notes, { NotesModel } from '../data/tools/notes';
 
 // Models e DTOs
 import ShortcutModel from "../models/ShortcutModel";
@@ -19,7 +23,7 @@ class AppsViewModel {
 
     private state = reactive<AppsViewModelState>({
         apps: apps,
-        openedApps: [profile],
+        openedApps: [],
         defaultApp: profile,
         shortcuts: shortcuts as ShortcutModel[]
     });
@@ -89,6 +93,7 @@ class AppsViewModel {
         });
     }
 
+    /** Minimizar aplicativo */
     public minimizeCurrentApp() {
         if(this.focusedApp.id != '-1') {
             this.focusedApp.options.minimized = true;
@@ -109,13 +114,53 @@ class AppsViewModel {
         this.state.openedApps.push(newApp);
     }
 
+    /** Fechar aplicativo */
     public closeApp(index: number) {
         this.state.openedApps.splice(index, 1);
     }
 
+    /** Fechar aplicativo atual */
     public closeCurrentApp() {
         this.state.openedApps = this.state.openedApps.filter(el => el.id != this.focusedApp.id);
     }
+
+    /** Abrir documento */
+    public openDocument(document: string) {
+        
+        const newApp: NotesModel = { 
+            id: "Notes",
+            foregroundColor: "#36495D",
+            stackPosition: 0,
+            name: "Notes",
+            icon: "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/tools%2Fnotes%2Ficon.svg?alt=media",
+            favicon: "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/tools%2Fnotes%2Ffavicon.svg?alt=media",
+            url: "/notes",
+            options: {
+                pinned: true,
+                maximized: false,
+                minimized: false
+            },
+            menus: [],
+            documents: []
+        };
+        newApp.documents.push(documents[document]);
+        newApp.stackPosition = this.state.openedApps.length;
+        this.state.openedApps.push(newApp);
+
+        // const notesTool = this.state.openedApps.find(el => el.id == 'Notes') as NotesModel;
+
+        // if(!notesTool) {
+        //     const newApp = { ...notes };
+        //     newApp.documents.push(documents[document]);
+        //     newApp.stackPosition = this.state.openedApps.length;
+        //     this.state.openedApps.push(newApp);
+        // }
+        // else {
+        //     notesTool.documents.push(documents[document]);
+        //     this.focusApp(notesTool.stackPosition);
+        // }
+    }
+
 }
 
 export default new AppsViewModel();

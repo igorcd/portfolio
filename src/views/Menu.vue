@@ -34,9 +34,11 @@
 
 <script lang='ts'>
 import { defineComponent, PropType, reactive } from 'vue';
+import clickOut from '../directives/clickOut';
+import vm from '../viewModels/AppsViewModel';
+// Componentes
 import Icon from '../components/Icon.vue';
 
-import clickOut from '../directives/clickOut';
 import Option from '../models/OptionModel';
 import AppModel from '../models/AppModel';
 const Menu = defineComponent({
@@ -48,7 +50,7 @@ const Menu = defineComponent({
         }
     },
     directives: { 'click-out': clickOut },
-    setup(props){7;
+    setup(){7;
         const state = reactive({
             selectedMenu: ''
         });
@@ -56,7 +58,7 @@ const Menu = defineComponent({
         const selectMenu = (option: Option) => {
             state.selectedMenu = '';
             const action = Function("return " + option.action)();
-            action();
+            action(vm);
         };
 
         return { state, selectMenu };

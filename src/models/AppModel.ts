@@ -13,7 +13,7 @@ export default interface AppModel {
         maximized: boolean;
         minimized: boolean
     };
-    meta: {
+    meta?: {
         header: {
             image: string;
             author: string;

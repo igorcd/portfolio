@@ -5,6 +5,9 @@ import MainView from '/src/views/MainView.vue';
 import GenericApp from '/src/views/apps/GenericApp.vue';
 import Profile from '../views/apps/Profile.vue';
 
+// Tools
+import Notes from '../views/tools/Notes.vue';
+
 const router = createRouter({
     history: createWebHistory(),
     routes: [
@@ -64,6 +67,13 @@ const router = createRouter({
             name: 'SuperPrático Gestor',
             component: GenericApp
         },
+
+        // Tools
+        {
+            path: '/notes',
+            name: 'Notes',
+            component: Notes
+        }
     ]
 });
 export default router;
