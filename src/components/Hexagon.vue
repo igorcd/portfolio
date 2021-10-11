@@ -1,5 +1,5 @@
 <template>
-    <div class="relative group">
+    <div class="relative">
         <!-- Sombra -->
         <img alt="Sombra do ícone" src="/img/hexagon.svg" class="hexagon-shadow w-18 h-18"/>
 
@@ -8,7 +8,8 @@
                  style="background: linear-gradient(188.85deg, #0C0C0C 17.91%, #282828 97.55%)">
 
                 <!-- Gradiente -->
-                <div class="w-full h-full opacity-0  transition-opacity duration-300 group-hover:opacity-100"
+                <div class="w-full h-full opacity-0  transition-opacity duration-300"
+                     :class="{'opacity-100': selected}"
                      :style="`background: linear-gradient(188.85deg, ${colors[0]} 17.91%, ${colors[1]} 97.55%)`"></div>
 
                 <!-- Ícone -->
@@ -31,6 +32,10 @@ const Hexagon = defineComponent({
         },
         icon: {
             type: String,
+            required: true
+        },
+        selected: {
+            type: Boolean,
             required: true
         }
     }

@@ -64,7 +64,7 @@
             "options": [
                 {
                     "title": "Fechar",
-                    "action": ""
+                    "action": "(vm) => vm.closeCurrentApp()"
                 }
             ]
         },
@@ -74,11 +74,11 @@
             "options": [
                 {
                     "title": "Minimizar",
-                    "action": ""
+                    "action": "(vm) => vm.minimizeCurrentApp()"
                 },
                 {
                     "title": "Ampliar/Reduzir",
-                    "action": ""
+                    "action": "(vm) => vm.toogleAppSize()"
                 }
             ]
         },
@@ -87,16 +87,16 @@
             "icon": "info",
             "options": [
                 {
-                    "title": "Link do site",
-                    "action": ""
+                    "title": "Visitar site",
+                    "action": "() => window.open('https://remotedesk.certfy.tech/', '_blank')"
                 },
                 {
-                    "title": "Link na Play Store",
-                    "action": ""
+                    "title": "Visitar na PlayStore",
+                    "action": "() => window.open('https://play.google.com/store/apps/details?id=com.vsoft.certfyremote&hl=pt', '_blank')"
                 },
                 {
-                    "title": "Link na App Store",
-                    "action": ""
+                    "title": "Visitar na AppStore",
+                    "action": "() => window.open('https://apps.apple.com/br/app/remote-atendimento-seguro/id1512014546', '_blank')"
                 }
             ]
         }

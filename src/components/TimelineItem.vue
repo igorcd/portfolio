@@ -12,7 +12,7 @@
         </div>
 
         <!-- Sistema -->
-        <div class="w-12 h-12 rounded-full bg-center bg-cover bg-no-repeat shadow-100" :style="style"></div>
+        <div class="w-12 h-12 rounded-full bg-center bg-cover bg-no-repeat shadow-100 cursor-pointer" :style="style" @click="$emit('onPress')"></div>
 
         <!-- Espaçador -->
         <div class="flex-1"></div>

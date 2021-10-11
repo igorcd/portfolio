@@ -52,7 +52,7 @@
             "pt": "Desenvolvedor front-end",
             "en": "Front-end developer"
         },
-        "relatedApps": ["remote", "superPraticoGestor"]
+        "relatedApps": ["Easy Proctor", "Remote", "Portal Red"]
     },
     "menus": [
         {
@@ -61,7 +61,7 @@
             "options": [
                 {
                     "title": "Fechar",
-                    "action": ""
+                    "action": "(vm) => vm.closeCurrentApp()"
                 }
             ]
         },
@@ -71,11 +71,11 @@
             "options": [
                 {
                     "title": "Minimizar",
-                    "action": ""
+                    "action": "(vm) => vm.minimizeCurrentApp()"
                 },
                 {
                     "title": "Ampliar/Reduzir",
-                    "action": ""
+                    "action": "(vm) => vm.toogleAppSize()"
                 }
             ]
         },
@@ -84,16 +84,16 @@
             "icon": "info",
             "options": [
                 {
-                    "title": "Link do site",
-                    "action": ""
+                    "title": "Visitar site",
+                    "action": "() => window.open('https://rgdigital.ipc.pb.gov.br/', '_blank')"
                 },
                 {
-                    "title": "Link na Play Store",
-                    "action": ""
+                    "title": "Visitar na PlayStore",
+                    "action": "() => window.open('https://play.google.com/store/apps/details?id=br.com.vsoft.certfy.PSPB.MobileRGDigital&hl=pt_BR&gl=US', '_blank')"
                 },
                 {
-                    "title": "Link na App Store",
-                    "action": ""
+                    "title": "Visitar na AppStore",
+                    "action": "() => window.open('https://apps.apple.com/br/app/rg-digital-para%C3%ADba/id1569886733', '_blank')"
                 }
             ]
         }

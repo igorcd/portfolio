@@ -13,12 +13,12 @@
                 <p class="text-white font-bold text-lg">{{ state.temperature || '-'}}°</p>
                 <Icon icon="cloud-sun" size="1.5rem" color="white"/>
             </div>
-            <p class="text-xs text-white font-light opacity-80">Desenvolvido por Igor Dantas</p>
+            <p class="text-xs text-white font-light opacity-80">{{ t('main.developer') }}</p>
         </div>
 
         <!-- Créditos imagem -->
         <div class="absolute w-full sm:w-auto sm:right-9 bottom-32 sm:bottom-72 flex flex-col items-center sm:items-end">
-            <a class="text-xs text-white font-light opacity-80" target="_blank" href="https://www.pexels.com/pt-br/foto/fotografia-aerea-da-formacao-rochosa-2440079/">Foto por Ian Beckley</a>
+            <a class="text-xs text-white font-light opacity-80" target="_blank" href="https://www.pexels.com/pt-br/foto/fotografia-aerea-da-formacao-rochosa-2440079/">{{ t('main.picture') }}</a>
         </div>
 
         <!-- Apps -->
@@ -34,7 +34,8 @@
                     v-model:maximized="app.options.maximized"
                     v-model:minimized="app.options.minimized"
                     @focus="vm.focusApp(app.stackPosition)"
-                    @close="vm.closeApp(index)">
+                    @close="vm.closeApp(index)"
+                    @openApp="vm.openApp($event)">
             </Window>
         </transition-group>
 
@@ -81,10 +82,14 @@ import CollectionView from './collection/CollectionView.vue';
 import vm from '../viewModels/AppsViewModel';
 import ipService from '../services/ipService';
 import openWeatherService from '../services/openWeatherService';
+import { useI18n } from 'vue-i18n';
 
 const MainView = defineComponent({
     components: { AppButton, Window, StatusBar, Icon, CollectionView, Shortcut },
     setup() {
+
+        const { t } = useI18n();
+        
         const state = reactive({
             temperature: 0,
             collectionOpened: false
@@ -116,7 +121,7 @@ const MainView = defineComponent({
 
         onMounted(() => getWeatherForecast());
 
-        return { vm, date, state, openApp, shortcuts };
+        return { vm, date, state, openApp, shortcuts, t };
     }
 });
 

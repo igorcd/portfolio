@@ -10,14 +10,14 @@ import vueJs from './vueJs.json';
 import xamarinForms from './xamarinForms.json';
 
 const frameworks: FrameworkModel[] = [
+    vueJs,
+    tailwindCss,
     aspNetCore,
     figma,
     firebase,
     flutter,
     react,
-    tailwindCss,
     typescript,
-    vueJs,
     xamarinForms
 ];
 

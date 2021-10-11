@@ -2,5 +2,8 @@
     "title": "React",
     "icon": "react",
     "colors": ["#1ABBEF", "#4AD5FE"],
-    "description": "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of qw qweyqweyqwe yqwey"
+    "description": {
+        "pt": "Desenvolvido pelo Facebook, o React é uma biblioteca JavaScript para criar interfaces de usuário",
+        "en": ""
+    }
 }

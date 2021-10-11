@@ -53,7 +53,7 @@
             "pt": "Desenvolvedor front-end",
             "en": "Front-end developer"
         },
-        "relatedApps": ["remote", "superPraticoGestor"]
+        "relatedApps": ["Exame Prático", "Super Aula", "SuperPrático Gestor"]
     },
     "menus": [
         {
@@ -62,7 +62,7 @@
             "options": [
                 {
                     "title": "Fechar",
-                    "action": ""
+                    "action": "(vm) => vm.closeCurrentApp()"
                 }
             ]
         },
@@ -72,11 +72,11 @@
             "options": [
                 {
                     "title": "Minimizar",
-                    "action": ""
+                    "action": "(vm) => vm.minimizeCurrentApp()"
                 },
                 {
                     "title": "Ampliar/Reduzir",
-                    "action": ""
+                    "action": "(vm) => vm.toogleAppSize()"
                 }
             ]
         },
@@ -85,16 +85,8 @@
             "icon": "info",
             "options": [
                 {
-                    "title": "Link do site",
-                    "action": ""
-                },
-                {
-                    "title": "Link na Play Store",
-                    "action": ""
-                },
-                {
-                    "title": "Link na App Store",
-                    "action": ""
+                    "title": "Visitar site",
+                    "action": "() => window.open('https://admin.easyproctor.tech/', '_blank')"
                 }
             ]
         }

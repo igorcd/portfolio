@@ -70,7 +70,7 @@
             "pt": "Desenvolvedor front-end",
             "en": "Front-end developer"
         },
-        "relatedApps": ["remote", "superPraticoGestor"]
+        "relatedApps": ["Super Aula", "Exame Prático", "BioPassID Demo"]
     },
     "menus": [
         {
@@ -79,7 +79,7 @@
             "options": [
                 {
                     "title": "Fechar",
-                    "action": ""
+                    "action": "(vm) => vm.closeCurrentApp()"
                 }
             ]
         },
@@ -89,11 +89,11 @@
             "options": [
                 {
                     "title": "Minimizar",
-                    "action": ""
+                    "action": "(vm) => vm.minimizeCurrentApp()"
                 },
                 {
                     "title": "Ampliar/Reduzir",
-                    "action": ""
+                    "action": "(vm) => vm.toogleAppSize()"
                 }
             ]
         },
@@ -102,16 +102,16 @@
             "icon": "info",
             "options": [
                 {
-                    "title": "Link do site",
-                    "action": ""
+                    "title": "Visitar site",
+                    "action": "() => window.open('https://hml-appgestor.superprati.co/', '_blank')"
                 },
                 {
-                    "title": "Link na Play Store",
-                    "action": ""
+                    "title": "Visitar na PlayStore",
+                    "action": "() => window.open('https://play.google.com/store/apps/details?id=br.com.vsoft.superpraticogestor&hl=pt_BR&gl=US', '_blank')"
                 },
                 {
-                    "title": "Link na App Store",
-                    "action": ""
+                    "title": "Visitar na App Store",
+                    "action": "() => window.open('https://apps.apple.com/br/app/superpr%C3%A1tico-gestor/id1334156398', '_blank')"
                 }
             ]
         }

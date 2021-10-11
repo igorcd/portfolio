@@ -88,10 +88,10 @@
             "appStore": ""
         },
         "role": {
-            "pt": "Desenvolvedor front-end",
+            "pt": "Desenvolvedor front-end e UX Designer",
             "en": "Front-end developer"
         },
-        "relatedApps": ["remote", "superPraticoGestor"]
+        "relatedApps": ["BioPassID Demo", "Super Aula", "Remote"]
     },
     "menus": [
         {
@@ -100,7 +100,7 @@
             "options": [
                 {
                     "title": "Fechar",
-                    "action": ""
+                    "action": "(vm) => vm.closeCurrentApp()"
                 }
             ]
         },
@@ -110,11 +110,11 @@
             "options": [
                 {
                     "title": "Minimizar",
-                    "action": ""
+                    "action": "(vm) => vm.minimizeCurrentApp()"
                 },
                 {
                     "title": "Ampliar/Reduzir",
-                    "action": ""
+                    "action": "(vm) => vm.toogleAppSize()"
                 }
             ]
         },
@@ -123,16 +123,8 @@
             "icon": "info",
             "options": [
                 {
-                    "title": "Link do site",
-                    "action": ""
-                },
-                {
-                    "title": "Link na Play Store",
-                    "action": ""
-                },
-                {
-                    "title": "Link na App Store",
-                    "action": ""
+                    "title": "Visitar site",
+                    "action": "() => window.open('https://portalred.redmobile.com.br/', '_blank')"
                 }
             ]
         }

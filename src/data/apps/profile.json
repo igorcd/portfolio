@@ -88,11 +88,11 @@
             "options": [
                 {
                     "title": "Enviar sugestão",
-                    "action": ""
+                    "action": "() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfJapOqvSzSsR1D3KdxHe2JmDe8Bo7q04sQNyMhPyGJ1Vo1NQ/viewform?usp=sf_link', '_blank')"
                 },
                 {
                     "title": "Relatar um problema",
-                    "action": ""
+                    "action": "() => window.open('https://forms.gle/B18agV4szB38uyS76', '_blank')"
                 }
             ]
         },

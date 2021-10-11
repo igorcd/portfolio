@@ -5,8 +5,9 @@ import apps from '../data/apps';
 import profile from '../data/apps/profile.json';
 import shortcuts from '../data/shortcuts';
 import documents from "../documents";
+
 // Tools
-import notes, { NotesModel } from '../data/tools/notes';
+import { NotesModel } from '../data/tools/notes';
 
 // Models e DTOs
 import ShortcutModel from "../models/ShortcutModel";
@@ -23,7 +24,7 @@ class AppsViewModel {
 
     private state = reactive<AppsViewModelState>({
         apps: apps,
-        openedApps: [],
+        openedApps: window.innerWidth < 640 ? [] :[profile],
         defaultApp: profile,
         shortcuts: shortcuts as ShortcutModel[]
     });
@@ -72,6 +73,9 @@ class AppsViewModel {
     // ==== MÉTODOS ====
 
     /** Restaurar tamanho do app */
+    public toogleAppSize() {
+        this.focusedApp.options.maximized = !this.focusedApp.options.maximized;
+    }
     public restoreAppSize() {
         this.focusedApp.options.maximized = false;
     }

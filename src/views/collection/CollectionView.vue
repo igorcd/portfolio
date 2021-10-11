@@ -5,7 +5,7 @@
             <Button class="w-8" @click="$emit('close')">
                 <Icon icon="arrowLeft" color="white" class="opacity-70" size="1.5rem"/>
             </Button>
-            <SearchInput placeholder="Pesquisar um aplicativo" v-model="search"/>
+            <SearchInput :placeholder="t('collection.search')" v-model="search"/>
         </div>         
 
         <div class="mx-auto max-w-2xl grid grid-cols-4 md:grid-cols-5  md:gap-x-10 gap-y-8 md:gap-y-14 px-3">
@@ -16,7 +16,7 @@
 
             
         </div>
-        <Text type="body" class="mx-auto text-center" v-if="allApps.length == 0">Nenhum aplicativo encontrado</Text>
+        <Text type="body" class="mx-auto text-center" v-if="allApps.length == 0">{{ t('collection.notFound') }}</Text>
     </div>
 </template>
 
@@ -26,10 +26,12 @@ import { Icon, SearchInput, Button, Text } from '../../components';
 import CollectionApp from './CollectionApp.vue';
 
 import apps from '../../data/apps';
+import { useI18n } from 'vue-i18n';
 
 const CollectionView = defineComponent({
     components: { SearchInput, CollectionApp, Icon, Button, Text },
     setup() {
+        const { t } = useI18n();
         const search = ref("");
 
         const allApps = computed(() =>  {
@@ -39,7 +41,7 @@ const CollectionView = defineComponent({
         });
 
 
-        return { allApps, search };
+        return { allApps, search, t };
     }
 });
 

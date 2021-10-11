@@ -2,5 +2,8 @@
     "title": "Xamarin.Forms",
     "icon": "xamarin",
     "colors": ["#009FEA", "#56C9FF"],
-    "description": "making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their wqeyqweyqwey wqeyqwey qwey wqey"
+    "description": {
+        "pt": "O Xamarin.Forms é um framework open-source para desenvolvimento de aplicações multiplataformas com .NET através de um único código fonte.",
+        "en": ""
+    }
 }

@@ -296,6 +296,12 @@ const Window = defineComponent({
                 context.emit('focus');
                 document.dispatchEvent(new Event("mousedown"));
             });
+
+            contentWindow?.addEventListener('emit', (e) => {
+                const detail = (e as CustomEvent).detail as { type: string, params: string };
+
+                context.emit(detail.type, detail.params);
+            });
         });
 
 

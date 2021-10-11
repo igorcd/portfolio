@@ -2,5 +2,8 @@
     "title": "Flutter",
     "icon": "flutter",
     "colors": ["#026ABE", "#69B7F9"],
-    "description": "default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved qweyqweyqwe yqweyqwey qwey"
+    "description": {
+        "pt": "Flutter é um framework do Google para desenvolvedor interfaces gráficas multiplataformas, a partie de um mesmo código fonte.",
+        "en": ""
+    }
 }

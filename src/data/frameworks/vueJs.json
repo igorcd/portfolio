@@ -2,5 +2,8 @@
     "title": "Vue.js",
     "icon": "vue",
     "colors": ["#41B883", "#2C5F48"],
-    "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC Contrary to popular belief."
+    "description": {
+        "pt": "O Vue.js é uma biblioteca javascript open source desenvolvido pelo ex. Google, Evan You. Leve e simples, o Vue.js atualmente é minha ferramenta de trabalho favorita para desenvolvimento.",
+        "en": ""
+    }
 }

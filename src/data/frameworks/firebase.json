@@ -2,5 +2,8 @@
     "title": "Firebase",
     "icon": "firebase",
     "colors": ["#F5820B", "#FFCB2B"],
-    "description": "text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has wqeyqwey qwe yqwey qwey "
+    "description": {
+        "pt": "O Firebase é a plataforma de desenvolvimento de aplicativos móveis do Google que ajuda você a criar, melhorar e expandir seu aplicativo.",
+        "en": ""
+    }
 }

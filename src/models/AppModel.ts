@@ -22,10 +22,7 @@ export default interface AppModel {
         company: string;
         year: number;
         logo: string;
-        description: {
-            pt: string;
-            en: string;
-        };
+        description:{[key:string]: string};
         tecnologies: string[];
         platforms: {
             phone: boolean;
