@@ -22,7 +22,7 @@ const messages =  {
         about: 'Sobre o sistema',
         datasheet: 'Ficha técnica',
         role: 'Função',
-        technologies: 'Tecnoologias',
+        technologies: 'Tecnologias',
         owner: 'Proprietário',
         period: 'Período',
         platforms: 'Plataformas',
