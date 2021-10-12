@@ -4,7 +4,8 @@
                 rounded-full lg:rounded-t-none lg:rounded-b-[1.25rem]
                 bg-black/80 shadow-100"
          :class="{'!w-12': state.menuOpened}"
-         :style="{'height': state.menuOpened ? `${((menus.length + 1) * 50) + 50}px`: '2.5rem'}">
+         :style="{'height': state.menuOpened ? `${((menus.length + 1) * 50) + 50}px`: '2.5rem'}"
+         v-click-out="() => state.menuOpened = false">
 
         <div class="flex items-center relative w-[calc(100vw-1.5rem)] lg:w-full h-10 lg:h-7">
 
@@ -24,8 +25,8 @@
             <!-- Menu -->
             <div class="text-white absolute lg:static left-1 top-11 transition-opacity duration-300 lg:!opacity-100 lg:!pointer-events-auto" 
                  :class="{'opacity-0 pointer-events-none': !state.menuOpened}">
-                <Menu :focusedApp="focusedApp"/>
-                <div class="flex flex-col items-center lg:hidden">
+                <Menu :focusedApp="focusedApp" @menuSelected="state.menuOpened = false"/>
+                <div class="flex flex-col items-center lg:hidden px-1.5">
                     <Divider/>
                     <IconButton icon="close" color="white" size="1.75rem" @click="closeApp"/>
                 </div>
@@ -55,10 +56,15 @@
 <script lang='ts'>
 import { computed, defineComponent, reactive } from 'vue';
 import { WindowControl, Divider, Clock, IconButton } from '../components';
+import clickOut from '../directives/clickOut';
+
 import Menu from './Menu.vue';
 import vm from '../viewModels/AppsViewModel';
 
 const StatusBar = defineComponent({
+    directives: {
+        'click-out': clickOut
+    },
     components: { WindowControl, Divider, Menu, Clock, IconButton },
     setup() {
 

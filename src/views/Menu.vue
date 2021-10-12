@@ -2,7 +2,7 @@
     <div class="flex flex-col lg:flex-row items-center" v-click-out="() => state.selectedMenu = ''">
 
         <!-- Menu -->
-        <div class="hover:bg-white/20 px-1.5 lg:px-3 py-1.5 lg:py-0.5 mt-3 lg:mt-0 lg:mr-0.5 rounded-sm font-light select-none relative"
+        <div class="hover:bg-white/20 px-2 lg:px-3 py-1.5 lg:py-0.5 mt-3 lg:mt-0 lg:mr-0.5 rounded-sm font-light select-none relative"
              :class="{'bg-white/20': state.selectedMenu == menu.title}"
              v-for="menu in focusedApp.menus" :key="menu.title"
              @click="state.selectedMenu = menu.title"
@@ -50,12 +50,13 @@ const Menu = defineComponent({
         }
     },
     directives: { 'click-out': clickOut },
-    setup(){7;
+    setup(props, context){
         const state = reactive({
             selectedMenu: ''
         });
 
         const selectMenu = (option: Option) => {
+            context.emit('menuSelected');
             state.selectedMenu = '';
             const action = Function("return " + option.action)();
             action(vm);

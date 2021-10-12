@@ -144,7 +144,18 @@ class AppsViewModel {
                 maximized: false,
                 minimized: false
             },
-            menus: [],
+            menus: [
+                {
+                    "title": "Inicio",
+                    "icon": "home",
+                    "options": [
+                        {
+                            "title": "Fechar",
+                            "action": "(vm) => vm.closeCurrentApp()"
+                        }
+                    ]
+                },
+            ],
             documents: []
         };
         newApp.documents.push(documents[document]);

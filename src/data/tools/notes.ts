@@ -17,7 +17,9 @@ const notes: NotesModel = {
         maximized: false,
         minimized: false
     },
-    menus: [],
+    menus: [
+     
+    ],
     documents: []
 };
 
