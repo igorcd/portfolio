@@ -56,7 +56,7 @@
             "options": [
                 {
                     "title": "GitHub",
-                    "action": "() => window.open('https://github.com/Igor4505', '_blank')"
+                    "action": "() => window.open('https://github.com/igorcd', '_blank')"
                 },
                 {
                     "title": "LinkedIn",
