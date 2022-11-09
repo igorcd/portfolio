@@ -1,5 +1,5 @@
 {
-    "id": "9",
+    "id": "13",
     "foregroundColor": "#FF6C18",
     "stackPosition": 0,
     "name": "SuperPrático Gestor",
@@ -7,7 +7,7 @@
     "favicon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Fgestor.svg?alt=media",
     "url": "/gestor",
     "options": {
-        "pinned": true,
+        "pinned": false,
         "maximized": false,
         "minimized": false
     },

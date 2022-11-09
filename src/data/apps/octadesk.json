@@ -1,0 +1,108 @@
+{
+    "id": "8",
+    "foregroundColor": "#303243",
+    "stackPosition": 0,
+    "name": "Octadesk",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Foctadesk%2Ficon.svg?alt=media",
+    "favicon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Foctadesk%2Ffavicon.svg?alt=media",
+    "url": "/octadesk",
+    "options": {
+        "pinned": false,
+        "maximized": false,
+        "minimized": false
+    },
+    "meta": {
+        "header": {
+            "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Foctadesk%2Fbackground.jpg?alt=media",
+            "author": "EKATERINA  BOLOVTSOVA - Pexels",
+            "source": "https://www.pexels.com/pt-br/foto/morena-bate-papo-conversa-animado-4049992/"
+        },
+        "company": "Octadesk",
+        "year": 2021,
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Foctadesk%2Flogo.svg?alt=media",
+        "description": {
+            "pt": "O Octadesk é um hub de atendimento, onde são concentradas mensagens de WhatsApp, Instagram, Messenger, web chats e bots. Através dele é possível realizar captação de lead, oferecer atendimento personalizado e comércio por conversa.",
+            "en": ""
+        },
+        "tecnologies": ["flutter"],
+        "platforms": {
+            "phone": true,
+            "tablet": true,
+            "desktop": true,
+            "web": false
+        },
+        "pictures": {
+            "sm": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Foctadesk%2Fsm%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Foctadesk%2Fsm%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Foctadesk%2Fsm%2F3.png?alt=media"
+            ],
+            "md": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Foctadesk%2Fmd%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Foctadesk%2Fmd%2F2.png?alt=media"
+            ],
+            "lg": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Foctadesk%2Flg%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Foctadesk%2Flg%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Foctadesk%2Flg%2F3.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Foctadesk%2Flg%2F4.png?alt=media"
+            ],
+            "xl": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Foctadesk%2Fxl%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Foctadesk%2Fxl%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Foctadesk%2Fxl%2F3.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Foctadesk%2Fxl%2F4.png?alt=media"
+            ]
+        },
+        "urls": {
+            "website": "",
+            "googlePlay": "https://play.google.com/store/apps/details?id=com.octadesk",
+            "appStore": "https://apps.apple.com/br/app/octadesk/id1605995041"
+        },
+        "role": {
+            "pt": "Desenvolvedor front-end",
+            "en": "Front-end developer"
+        },
+        "relatedApps": ["Super Aula", "Remote", "Pilotar", "Wanna Know"]
+    },
+    "menus": [
+        {
+            "title": "Inicio",
+            "icon": "home",
+            "options": [
+                {
+                    "title": "Fechar",
+                    "action": "(vm) => vm.closeCurrentApp()"
+                }
+            ]
+        },
+        {
+            "title": "Janela",
+            "icon": "window",
+            "options": [
+                {
+                    "title": "Minimizar",
+                    "action": "(vm) => vm.minimizeCurrentApp()"
+                },
+                {
+                    "title": "Ampliar/Reduzir",
+                    "action": "(vm) => vm.toogleAppSize()"
+                }
+            ]
+        },
+        {
+            "title": "Sobre",
+            "icon": "info",
+            "options": [
+                {
+                    "title": "Visitar na PlayStore",
+                    "action": "() => window.open('https://play.google.com/store/apps/details?id=com.octadesk', '_blank')"
+                },
+                {
+                    "title": "Visitar na AppStore",
+                    "action": "() => window.open('https://apps.apple.com/br/app/octadesk/id1605995041', '_blank')"
+                }
+            ]
+        }
+    ]
+}

@@ -1,11 +1,11 @@
 {
-    "id": "2",
-    "foregroundColor": "#005961",
+    "id": "6",
+    "foregroundColor": "#5C27C1",
     "stackPosition": 0,
-    "name": "Certfy ID",
-    "icon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/icons%2Fcertfyid.svg?alt=media",
-    "favicon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Fcertfyid.svg?alt=media",
-    "url": "/certfyid",
+    "name": "Guestt",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fguestt%2Ficon.svg?alt=media",
+    "favicon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fguestt%2Ffavicon.svg?alt=media",
+    "url": "/guestt",
     "options": {
         "pinned": false,
         "maximized": false,
@@ -13,23 +13,23 @@
     },
     "meta": {
         "header": {
-            "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fcertfyid%2Fbackground.jpg?alt=media",
-            "author": "Andrea Piacquadio - Pexels",
-            "source": "https://www.pexels.com/pt-br/foto/mulher-de-camiseta-branca-segurando-um-smartphone-na-frente-do-laptop-914931/"
+            "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fguestt%2Fbackground.jpg?alt=media",
+            "author": "Pixabay - Pexels",
+            "source": "https://www.pexels.com/pt-br/foto/pessoa-segurando-a-alavanca-da-porta-dentro-da-sala-271639/"
         },
-        "company": "Vsoft Tecnologia",
-        "year": 2021,
-        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fcertfyid%2Flogo.svg?alt=media",
+        "company": "Ps3 ProSoft",
+        "year": 2022,
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Fguestt%2Flogo.svg?alt=media",
         "description": {
-            "pt": "O Certfy ID faz parte da suite de produtos Certfy, tem como função a entrega e gerenciamento de documentos de identidade digitais de maneira simples e segura. Atualmente o Certfy ID é responsável pela emissão do RG Digital dos estados da Paraíba e Alagoas.",
+            "pt": "Guestt é um sistema para gestão inteligente de hospedagem, através dele é possível realizar o cadastramento nas principais plataformas do mercado (Airbnb, Booking etc.), realizar contato com os hóspedes, limpeza do imóvel, processos de check-in e check-out, e controle de acesso.",
             "en": ""
         },
-        "tecnologies": ["xamarin", "vue", "tailwind", "typescript"],
+        "tecnologies": ["flutter"],
         "platforms": {
             "phone": true,
             "tablet": false,
             "desktop": false,
-            "web": true
+            "web": false
         },
         "pictures": {
             "sm": [
@@ -44,9 +44,9 @@
             "xl": []
         },
         "urls": {
-            "website": "https://rgdigital.ipc.pb.gov.br/",
+            "website": "",
             "googlePlay": "https://play.google.com/store/apps/details?id=br.com.vsoft.certfy.PSPB.MobileRGDigital&hl=pt_BR&gl=US",
-            "appStore": "https://apps.apple.com/br/app/rg-digital-para%C3%ADba/id1569886733"
+            "appStore": ""
         },
         "role": {
             "pt": "Desenvolvedor front-end",
@@ -83,10 +83,6 @@
             "title": "Sobre",
             "icon": "info",
             "options": [
-                {
-                    "title": "Visitar site",
-                    "action": "() => window.open('https://rgdigital.ipc.pb.gov.br/', '_blank')"
-                },
                 {
                     "title": "Visitar na PlayStore",
                     "action": "() => window.open('https://play.google.com/store/apps/details?id=br.com.vsoft.certfy.PSPB.MobileRGDigital&hl=pt_BR&gl=US', '_blank')"

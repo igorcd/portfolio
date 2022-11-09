@@ -1,0 +1,119 @@
+{
+    "id": "5",
+    "foregroundColor": "#454647",
+    "stackPosition": 0,
+    "name": "Face SDK Demo",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/icons%2Fbiopass.svg?alt=media",
+    "favicon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Fbiopass.svg?alt=media",
+    "url": "/face-sdk",
+    "options": {
+        "pinned": false,
+        "maximized": false,
+        "minimized": false
+    },
+    "meta": {
+        "header": {
+            "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fbackground.jpg?alt=media",
+            "author": "mentatdgt - Pexels",
+            "source": "https://www.pexels.com/pt-br/foto/mulher-sorridente-segurando-um-smartphone-preto-937541/"
+        },
+        "company": "Vsoft Tecnologia",
+        "year": 2022,
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Flogo.svg?alt=media",
+        "description": {
+            "pt": "Esse projeto é uma página de demonstração para o BioPass ID Face Detection SDK, que foi desenvolvido pela Vsoft.\nO BioPass ID Face SDK possui uma grande varidade de funções para processamento biometrico, ele permite realizar o rastreamento facial, recortar e anonimizar faces. Também permite verificar se a foto está dentro dos padrões do ICAO, identificar falsificações e verificar a identidade do usuário através da sua foto",
+            "en": "This project is a demo page for the BioPass ID Face Detection SDK, which is developed by Vsoft.\nThe BioPass ID Face SDK has a variety of biometric processing utilities, that allow the user track, crop or anonymize people faces, also, verify the compliance with ICAO rules, identify spoofing and check people identity by a picture."
+        },
+        "tecnologies": ["next", "react", "tailwind", "typescript"],
+        "platforms": {
+            "phone": false,
+            "tablet": false,
+            "desktop": false,
+            "web": true
+        },
+        "pictures": {
+            "sm": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fsm%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fsm%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fsm%2F3.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fsm%2F4.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fsm%2F5.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fsm%2F6.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fsm%2F7.png?alt=media"
+            ],
+            "md": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fmd%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fmd%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fmd%2F3.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fmd%2F4.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fmd%2F5.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fmd%2F6.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fmd%2F7.png?alt=media"
+            ],
+            "lg": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Flg%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Flg%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Flg%2F3.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Flg%2F4.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Flg%2F5.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Flg%2F6.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Flg%2F7.png?alt=media"
+            ],
+            "xl": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fxl%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fxl%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fxl%2F3.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fxl%2F4.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fxl%2F5.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fxl%2F6.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FfaceSdk%2Fxl%2F7.png?alt=media"
+            ]
+        },
+        "urls": {
+            "website": "https://demo.biopassid.com/",
+            "googlePlay": "",
+            "appStore": ""
+        },
+        "role": {
+            "pt": "Desenvolvedor front-end",
+            "en": "Front-end developer"
+        },
+        "relatedApps": ["Easy Proctor", "Super Aula", "BioPassID Demo"]
+    },
+    "menus": [
+        {
+            "title": "Inicio",
+            "icon": "home",
+            "options": [
+                {
+                    "title": "Fechar",
+                    "action": "(vm) => vm.closeCurrentApp()"
+                }
+            ]
+        },
+        {
+            "title": "Janela",
+            "icon": "window",
+            "options": [
+                {
+                    "title": "Minimizar",
+                    "action": "(vm) => vm.minimizeCurrentApp()"
+                },
+                {
+                    "title": "Ampliar/Reduzir",
+                    "action": "(vm) => vm.toogleAppSize()"
+                }
+            ]
+        },
+        {
+            "title": "Sobre",
+            "icon": "info",
+            "options": [
+                {
+                    "title": "Visitar site",
+                    "action": "() => window.open('https://demo.biopassid.com/', '_blank')"
+                }
+            ]
+        }
+    ]
+}

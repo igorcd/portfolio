@@ -39,13 +39,12 @@
             </Window>
         </transition-group>
 
-
         <transition-group name="list-complete" tag="div"
                           id="task-bar"
                           class="task-bar hidden-scroll"
                           :style="{'width': `${8 + (52 * vm.taskBarApps.length)}px`}"
                           :class="{'opacity-0': state.collectionOpened}">
-                          
+                                  
             <AppButton v-for="app in vm.taskBarApps" :key="app.id"
                        :aria-label="'Aplicativo ' + app.name"
                        :app="app" 

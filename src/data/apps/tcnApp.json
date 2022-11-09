@@ -1,0 +1,133 @@
+{
+    "id": "14",
+    "foregroundColor": "#EEEEEE",
+    "stackPosition": 0,
+    "name": "Todos com a Nota App",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Ficon.svg?alt=media",
+    "favicon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Ffavicon.svg?alt=media",
+    "url": "/tcnApp",
+    "options": {
+        "pinned": false,
+        "maximized": false,
+        "minimized": false
+    },
+    "meta": {
+        "header": {
+            "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fbackground.jpg?alt=media",
+            "author": "Tembela Bohle - Pexels",
+            "source": "https://www.pexels.com/pt-br/foto/pessoas-assistindo-jogo-de-futebol-1884574/"
+        },
+        "company": "PS3 Prosoft",
+        "year": 2022,
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Flogo.svg?alt=media",
+        "description": {
+            "pt": "Todos Com a Nota é um programa do Governo do Estado de Pernambuco executado pela Federação Pernambucana de Futebol que permite que o cidadão pernambucano acumule pontos através da captura de notas fiscais (NFC-e) e troque por ingressos em jogos de futebol.",
+            "en": ""
+        },
+        "tecnologies": ["flutter"],
+        "platforms": {
+            "phone": true,
+            "tablet": false,
+            "desktop": false,
+            "web": true
+        },
+        "pictures": {
+            "sm": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fapp%2Fsm%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fapp%2Fsm%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fapp%2Fsm%2F3.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fapp%2Fsm%2F4.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fapp%2Fsm%2F5.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fapp%2Fsm%2F6.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fweb%2Fsm%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fweb%2Fsm%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fweb%2Fsm%2F3.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fweb%2Fsm%2F4.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2FlandingPage%2Fsm%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2FlandingPage%2Fsm%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2FlandingPage%2Fsm%2F3.png?alt=media"
+            ],
+            "md": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fweb%2Fmd%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fweb%2Fmd%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fweb%2Fmd%2F3.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fweb%2Fmd%2F4.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2FlandingPage%2Fmd%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2FlandingPage%2Fmd%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2FlandingPage%2Fmd%2F3.png?alt=media"
+            ],
+            "lg": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fweb%2Flg%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fweb%2Flg%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fweb%2Flg%2F3.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fweb%2Flg%2F4.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2FlandingPage%2Flg%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2FlandingPage%2Flg%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2FlandingPage%2Flg%2F3.png?alt=media"
+            ],
+            "xl": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fweb%2Fxl%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fweb%2Fxl%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fweb%2Fxl%2F3.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2Fweb%2Fxl%2F4.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2FlandingPage%2Fxl%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2FlandingPage%2Fxl%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2Ftcn%2FlandingPage%2Fxl%2F3.png?alt=media"
+            ]
+        },
+        "urls": {
+            "website": "https://tcn.pe/",
+            "googlePlay": "https://play.google.com/store/apps/details?id=com.ps3prosoft.tcn22",
+            "appStore": "https://apps.apple.com/br/app/todos-com-a-nota/id1630826405"
+        },
+        "role": {
+            "pt": "Desenvolvedor front-end",
+            "en": "Front-end developer"
+        },
+        "relatedApps": ["Octadesk", "Remote", "Portal Red", "Easy Proctor"]
+    },
+    "menus": [
+        {
+            "title": "Inicio",
+            "icon": "home",
+            "options": [
+                {
+                    "title": "Fechar",
+                    "action": "(vm) => vm.closeCurrentApp()"
+                }
+            ]
+        },
+        {
+            "title": "Janela",
+            "icon": "window",
+            "options": [
+                {
+                    "title": "Minimizar",
+                    "action": "(vm) => vm.minimizeCurrentApp()"
+                },
+                {
+                    "title": "Ampliar/Reduzir",
+                    "action": "(vm) => vm.toogleAppSize()"
+                }
+            ]
+        },
+        {
+            "title": "Sobre",
+            "icon": "info",
+            "options": [
+                {
+                    "title": "Visitar site",
+                    "action": "() => window.open('https://tcn.pe/', '_blank')"
+                },
+                {
+                    "title": "Visitar na PlayStore",
+                    "action": "() => window.open('https://play.google.com/store/apps/details?id=com.ps3prosoft.tcn22', '_blank')"
+                },
+                {
+                    "title": "Visitar na AppStore",
+                    "action": "() => window.open('https://apps.apple.com/br/app/todos-com-a-nota/id1630826405', '_blank')"
+                }
+            ]
+        }
+    ]
+}

@@ -34,7 +34,9 @@ module.exports = {
         '@typescript-eslint/no-this-alias': 'off',
         '@typescript-eslint/no-empty-function': ['warn'],
         '@typescript-eslint/no-var-requires': 'off',
-        '@typescript-eslint/explicit-module-boundary-types': 'off'
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        'vue/multi-word-component-names': 'off',
+        'vue/no-reserved-component-names': 'off',
     }
 };
   

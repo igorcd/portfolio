@@ -1,5 +1,5 @@
 {
-    "id": "6",
+    "id": "10",
     "foregroundColor": "#E31E26",
     "stackPosition": 0,
     "name": "Portal Red",
@@ -7,7 +7,7 @@
     "favicon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Fportalred.svg?alt=media",
     "url": "/portalRed",
     "options": {
-        "pinned": true,
+        "pinned": false,
         "maximized": false,
         "minimized": false
     },

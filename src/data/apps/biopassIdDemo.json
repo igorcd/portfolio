@@ -7,7 +7,7 @@
     "favicon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Fbiopass.svg?alt=media",
     "url": "/biopassIdDemo",
     "options": {
-        "pinned": true,
+        "pinned": false,
         "maximized": false,
         "minimized": false
     },

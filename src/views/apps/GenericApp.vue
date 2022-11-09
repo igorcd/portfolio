@@ -120,35 +120,37 @@
                 </TagContainer>
                 
                 <div class="flex items-center space-x-0.5 px-7">
-                    <IconButton icon="desktop"
-                                class="w-10 h-10 opacity-50" 
-                                v-if="app.meta && app.meta?.pictures.xl.length > 0"
-                                color="white"
-                                size="1.75rem"
-                                :class="{'opacity-100': state.deviceSize == 'xl'}"
-                                @click="state.deviceSize = 'xl'"/>
-
-                    <IconButton icon="tabletLandscape"
-                                class="w-10 h-10 opacity-50" color="white"
-                                :class="{'opacity-100': state.deviceSize == 'lg'}"
-                                size="1.75rem"
-                                v-if="app.meta && app.meta?.pictures.lg.length > 0"
-                                @click="state.deviceSize = 'lg'"/>
-
-                    <IconButton icon="tablet" 
-                                class="w-10 h-10 opacity-50" color="white"
-                                :class="{'opacity-100': state.deviceSize == 'md'}"
-                                size="1.75rem"
-                                v-if="app.meta && app.meta?.pictures.md.length > 0"
-                                @click="state.deviceSize = 'md'"/>
-
+                    
                     <IconButton icon="smartphone"
-                                class="w-10 h-10 opacity-50"
-                                :class="{'opacity-100': state.deviceSize == 'sm'}"
+                                class="w-10 h-10 opacity-20 "
+                                :class="{'!opacity-100 bg-white/20': state.deviceSize == 'sm'}"
                                 color="white" 
                                 size="1.5rem"
                                 v-if="app.meta && app.meta?.pictures.sm.length > 0"
                                 @click="state.deviceSize = 'sm'"/>
+
+                    <IconButton icon="tablet" 
+                                class="w-10 h-10 opacity-20" color="white"
+                                :class="{'!opacity-100 bg-white/20': state.deviceSize == 'md'}"
+                                size="1.75rem"
+                                v-if="app.meta && app.meta?.pictures.md.length > 0"
+                                @click="state.deviceSize = 'md'"/>
+                 
+
+                    <IconButton icon="tabletLandscape"
+                                class="w-10 h-10 opacity-20" color="white"
+                                :class="{'!opacity-100 bg-white/20': state.deviceSize == 'lg'}"
+                                size="1.75rem"
+                                v-if="app.meta && app.meta?.pictures.lg.length > 0"
+                                @click="state.deviceSize = 'lg'"/>
+
+                    <IconButton icon="desktop"
+                                class="w-10 h-10 opacity-20" 
+                                v-if="app.meta && app.meta?.pictures.xl.length > 0"
+                                color="white"
+                                size="1.75rem"
+                                :class="{'!opacity-100 bg-white/20': state.deviceSize == 'xl'}"
+                                @click="state.deviceSize = 'xl'"/>
                 </div>
             </Container>
 
@@ -156,33 +158,32 @@
         </div>
 
         <Container>
-            
             <Carousel v-if="state.deviceSize == 'sm'">
                 <img class="inline-block h-56 mr-4 cursor-pointer hover:scale-105 transition-transform duration-150 rounded"
                      alt="Imagem do aplicativo no tamanho SM"
-                     v-for="img in app.meta?.pictures.sm" :key="img" :src="img"
-                     @click="selectImage(img)"/>
+                     v-for="(img, index) in app.meta?.pictures.sm" :key="img" :src="img"
+                     @click="selectImage(index)"/>
             </Carousel>
                 
             <Carousel v-else-if="state.deviceSize == 'md'">
                 <img class="inline-block h-56 mr-4 cursor-pointer hover:scale-105 transition-transform duration-150 rounded"
                      alt="Imagem do aplicativo no tamanho MD"
-                     v-for="img in app.meta?.pictures.md" :key="img" :src="img"
-                     @click="selectImage(img)"/>
+                     v-for="(img, index) in app.meta?.pictures.md" :key="img" :src="img"
+                     @click="selectImage(index)"/>
             </Carousel>
                 
             <Carousel v-else-if="state.deviceSize == 'lg'">
                 <img class="inline-block h-40 mr-4 cursor-pointer hover:scale-105 transition-transform duration-150 rounded"
                      alt="Imagem do aplicativo no tamanho LG"
-                     v-for="img in app.meta?.pictures.lg" :key="img" :src="img"
-                     @click="selectImage(img)"/>
+                     v-for="(img, index) in app.meta?.pictures.lg" :key="img" :src="img"
+                     @click="selectImage(index)"/>
             </Carousel>
 
             <Carousel v-else>
                 <img class="inline-block h-36 mr-4 cursor-pointer hover:scale-105 transition-transform duration-150 rounded"
                      alt="Imagem do aplicativo no tamanho XL"
-                     v-for="img in app.meta?.pictures.xl" :key="img" :src="img"
-                     @click="selectImage(img)"/>
+                     v-for="(img, index) in app.meta?.pictures.xl" :key="img" :src="img"
+                     @click="selectImage(index)"/>
             </Carousel>
 
             <Divider class="my-6"/>
@@ -202,14 +203,21 @@
     
         <!-- Imagem -->
         <transition name="fade">
-            <div class="fixed top-0 left-0 w-full h-screen bg-black/70 flex items-center z-50" v-if="state.imageOpened" @click.self="state.imageOpened = false">
+            <div class="fixed top-0 left-0 w-full h-screen bg-black/90 flex items-center z-50" v-if="state.imageOpened" @click.self="state.imageOpened = false">
 
                 <img alt="Detalhe da imagem selecionada"
-                     class="w-[calc(100%-16px)] h-[calc(100%-30px)] mx-auto object-contain" 
-                     :src="state.selectedImage"/>
+                     class=" max-w-full h-[calc(100%-30px)] mx-auto object-contain" 
+                     :src="image"/>
 
-                <button class="w-10 h-10 bg-black/12 flex items-center justify-center absolute top-4 left-4 bg-black rounded-full" @click="state.imageOpened = false">
+                <button class="w-10 h-10 bg-black/12 flex items-center justify-center absolute top-4 left-4 rounded-full" @click="state.imageOpened = false">
                     <Icon icon="times" color="white" size="1.5rem"/>
+                </button>
+
+                <button class="w-10 h-10 bg-black/12 flex items-center justify-center absolute top-1/2 left-4 rounded-full" @click="goToPrevImage">
+                    <Icon icon="angleLeft" color="white" size="1.5rem"/>
+                </button>
+                <button class="w-10 h-10 bg-black/12 flex items-center justify-center absolute top-1/2 right-4 rounded-full" @click="goToNextImage">
+                    <Icon icon="angleRight" color="white" size="1.5rem"/>
                 </button>
             </div>
         </transition>
@@ -225,7 +233,7 @@ import AppModel from '../../models/AppModel';
 
 interface GenericAppState {
     deviceSize: 'sm' | 'md' | 'lg' | 'xl',
-    selectedImage: string;
+    selectedImageIndex: number;
     imageOpened: boolean;
 }
 
@@ -240,24 +248,24 @@ const UnderDevelopment = defineComponent({
 
         /** Pegar o tamanho de tela default */
         const getDefaultScreenSize = () => {
-            if(app.meta!.pictures.xl.length > 0) {
-                return "xl";
-            }
-            else if(app.meta!.pictures.lg.length > 0) {
-                return "lg";
+            if(app.meta!.pictures.sm.length > 0) {
+                return "sm";
             }
             else if(app.meta!.pictures.md.length > 0) {
                 return "md";
             }
+            else if(app.meta!.pictures.lg.length > 0) {
+                return "lg";
+            }
             else {
-                return "sm";
+                return "xl";
             }
         };
 
         // Estado
         const state = reactive<GenericAppState>({
             deviceSize: getDefaultScreenSize(),
-            selectedImage: "",
+            selectedImageIndex: -1,
             imageOpened: false,
         });
 
@@ -266,10 +274,15 @@ const UnderDevelopment = defineComponent({
         /** Aplicativos relacionados */
         const relatedApps = computed(() => apps.filter(el => app.meta!.relatedApps.includes(el.name))) || [];
 
+        /** Imagem atual */
+        const image = computed(() => {
+            return app.meta!.pictures[state.deviceSize][state.selectedImageIndex];
+        });
+
         // Métodos
-        const selectImage = (url: string) => {
+        const selectImage = (index: number) => {
             state.imageOpened = true;
-            state.selectedImage = url;
+            state.selectedImageIndex = index;
         };
 
         const openApp = (id: string) => {
@@ -277,7 +290,19 @@ const UnderDevelopment = defineComponent({
             window.dispatchEvent(e);
         };
 
-        return { state, app, relatedApps, selectImage, openApp, t };
+        const goToNextImage = () => {
+            const nextIndex = state.selectedImageIndex + 1;
+            const hasNextImage = app.meta!.pictures[state.deviceSize][nextIndex] != null;
+            state.selectedImageIndex = hasNextImage ? nextIndex : 0;
+        };
+
+        const goToPrevImage = () => {
+            state.selectedImageIndex = state.selectedImageIndex == 0 ? app.meta!.pictures[state.deviceSize].length -1 : state.selectedImageIndex - 1;
+        };
+
+        
+
+        return { state, app, relatedApps, selectImage, openApp, t, image, goToNextImage, goToPrevImage };
     }
 });
 

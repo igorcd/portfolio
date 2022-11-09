@@ -1,0 +1,107 @@
+{
+    "id": "15",
+    "foregroundColor": "#6D28D9",
+    "stackPosition": 0,
+    "name": "Wanna Know",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FwannaKnow%2Ficon.svg?alt=media",
+    "favicon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FwannaKnow%2Ffavicon.svg?alt=media",
+    "url": "/wannaKnow",
+    "options": {
+        "pinned": false,
+        "maximized": false,
+        "minimized": false
+    },
+    "meta": {
+        "header": {
+            "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FwannaKnow%2Fbackground.jpg?alt=media",
+            "author": "Leeloo Thefirst - Pexels",
+            "source": "https://www.pexels.com/pt-br/foto/decoracao-de-parede-branca-e-marrom-letra-b-5428829/"
+        },
+        "company": "-",
+        "year": 2022,
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FwannaKnow%2Flogo.svg?alt=media",
+        "description": {
+            "pt": "O WannaKnow é um projeto de demonstração das funcionalidades de comunicação em tempo real da plataforma Firebase. Através do sistema é possível criar enquetes, acompanhar sua evolução em tempo real e interagir com os outros participantes através de mensagens.",
+            "en": ""
+        },
+        "tecnologies": ["tailwind", "vue", "typescript", "firebase"],
+        "platforms": {
+            "phone": false,
+            "tablet": false,
+            "desktop": false,
+            "web": true
+        },
+        "pictures": {
+            "sm": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FwannaKnow%2Fsm%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FwannaKnow%2Fsm%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FwannaKnow%2Fsm%2F3.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FwannaKnow%2Fsm%2F4.png?alt=media"
+            ],
+            "md": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FwannaKnow%2Fmd%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FwannaKnow%2Fmd%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FwannaKnow%2Fmd%2F3.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FwannaKnow%2Fmd%2F4.png?alt=media"
+            ],
+            "lg": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FwannaKnow%2Flg%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FwannaKnow%2Flg%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FwannaKnow%2Flg%2F3.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FwannaKnow%2Flg%2F4.png?alt=media"
+            ],
+            "xl": [
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FwannaKnow%2Fxl%2F1.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FwannaKnow%2Fxl%2F2.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FwannaKnow%2Fxl%2F3.png?alt=media",
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FwannaKnow%2Fxl%2F4.png?alt=media"
+            ]
+        },
+        "urls": {
+            "website": "https://rgdigital.ipc.pb.gov.br/",
+            "googlePlay": "",
+            "appStore": ""
+        },
+        "role": {
+            "pt": "Desenvolvedor front-end",
+            "en": "Front-end developer"
+        },
+        "relatedApps": ["Easy Proctor", "Remote", "Portal Red"]
+    },
+    "menus": [
+        {
+            "title": "Inicio",
+            "icon": "home",
+            "options": [
+                {
+                    "title": "Fechar",
+                    "action": "(vm) => vm.closeCurrentApp()"
+                }
+            ]
+        },
+        {
+            "title": "Janela",
+            "icon": "window",
+            "options": [
+                {
+                    "title": "Minimizar",
+                    "action": "(vm) => vm.minimizeCurrentApp()"
+                },
+                {
+                    "title": "Ampliar/Reduzir",
+                    "action": "(vm) => vm.toogleAppSize()"
+                }
+            ]
+        },
+        {
+            "title": "Sobre",
+            "icon": "info",
+            "options": [
+                {
+                    "title": "Visitar site",
+                    "action": "() => window.open('https://wanna-know-f25bf.web.app/', '_blank')"
+                }
+            ]
+        }
+    ]
+}

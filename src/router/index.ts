@@ -67,6 +67,37 @@ const router = createRouter({
             name: 'SuperPrático Gestor',
             component: GenericApp
         },
+        {
+            path: '/face-sdk',
+            name: 'Face SDK Demo',
+            component: GenericApp
+        },
+        // TODO - FALTA AS FOTOS
+        {
+            path: '/guestt',
+            name: 'Guestt',
+            component: GenericApp
+        },
+        {
+            path: '/mais-opcao',
+            name: 'Mais Opção',
+            component: GenericApp
+        },
+        {
+            path: '/octadesk',
+            name: 'Octadesk',
+            component: GenericApp
+        },
+        {
+            path: '/tcnApp',
+            name: 'Todos com a Nota App',
+            component: GenericApp
+        },
+        {
+            path: '/wannaKnow',
+            name: 'Wanna Know',
+            component: GenericApp
+        },
 
         // Tools
         {

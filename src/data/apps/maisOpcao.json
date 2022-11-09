@@ -1,0 +1,104 @@
+{
+    "id": "7",
+    "foregroundColor": "#F9CE3C",
+    "stackPosition": 0,
+    "name": "Mais Opção",
+    "icon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FmaisOpcao%2Ficon.svg?alt=media",
+    "favicon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FmaisOpcao%2Ffavicon.svg?alt=media",
+    "url": "/mais-opcao",
+    "options": {
+        "pinned": false,
+        "maximized": false,
+        "minimized": false
+    },
+    "meta": {
+        "header": {
+            "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FmaisOpcao%2Fbackgrond.jpg?alt=media",
+            "author": "Sergio Souza - Pexels",
+            "source": "https://www.pexels.com/pt-br/foto/um-posto-de-gasolina-vazio-3602009/"
+        },
+        "company": "PS3 ProSoft",
+        "year": 2022,
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FmaisOpcao%2Flogo.svg?alt=media",
+        "description": {
+            "pt": "O Mais Opção é o programa de fidelidade da Rede de Postos Opção. Através do aplicativo o cliente acumula pontos escaneando o QR-code dos cupons fiscais e pode troca-los por uma série de vantagens.",
+            "en": "Rede de Opção Gas Station loyalty program. With the app, you can accumulate points by scanning the QR-code of the tax coupons and get exclusive benefits and discounts."
+        },
+        "tecnologies": ["flutter"],
+        "platforms": {
+            "phone": true,
+            "tablet": false,
+            "desktop": false,
+            "web": false
+        },
+        "pictures": {
+            "sm": [
+              "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FmaisOpcao%2Fsm%2F1.png?alt=media",
+              "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FmaisOpcao%2Fsm%2F2.png?alt=media",
+              "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FmaisOpcao%2Fsm%2F3.png?alt=media",
+              "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FmaisOpcao%2Fsm%2F4.png?alt=media",
+              "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FmaisOpcao%2Fsm%2F5.png?alt=media",
+              "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FmaisOpcao%2Fsm%2F6.png?alt=media",
+              "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FmaisOpcao%2Fsm%2F7.png?alt=media",
+              "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/apps%2FmaisOpcao%2Fsm%2F8.png?alt=media"
+            ],
+            "md": [],
+            "lg": [],
+            "xl": []
+        },
+        "urls": {
+            "website": "",
+            "googlePlay": "https://play.google.com/store/apps/details?id=ps3.apps.maisopcao",
+            "appStore": "https://apps.apple.com/br/app/mais-op%C3%A7%C3%A3o/id1528999208"
+        },
+        "role": {
+            "pt": "Desenvolvedor front-end",
+            "en": "Front-end developer"
+        },
+        "relatedApps": ["Octadesk", "Guestt", "Portal Red", "Pilotar"]
+    },
+    "menus": [
+        {
+            "title": "Inicio",
+            "icon": "home",
+            "options": [
+                {
+                    "title": "Fechar",
+                    "action": "(vm) => vm.closeCurrentApp()"
+                }
+            ]
+        },
+        {
+            "title": "Janela",
+            "icon": "window",
+            "options": [
+                {
+                    "title": "Minimizar",
+                    "action": "(vm) => vm.minimizeCurrentApp()"
+                },
+                {
+                    "title": "Ampliar/Reduzir",
+                    "action": "(vm) => vm.toogleAppSize()"
+                }
+            ]
+        },
+        {
+            "title": "Sobre",
+            "icon": "info",
+            "options": [
+                {
+                    "title": "Visitar site",
+                    "action": "() => window.open('https://rgdigital.ipc.pb.gov.br/', '_blank')"
+                },
+                {
+                    "title": "Visitar na PlayStore",
+                    "action": "() => window.open('https://play.google.com/store/apps/details?id=br.com.vsoft.certfy.PSPB.MobileRGDigital&hl=pt_BR&gl=US', '_blank')"
+                },
+                {
+                    "title": "Visitar na AppStore",
+                    "action": "() => window.open('https://apps.apple.com/br/app/rg-digital-para%C3%ADba/id1569886733', '_blank')"
+                }
+            ]
+        }
+    ]
+}

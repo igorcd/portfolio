@@ -5,6 +5,7 @@ import apps from '../data/apps';
 import profile from '../data/apps/profile.json';
 import shortcuts from '../data/shortcuts';
 import documents from "../documents";
+import collection from '../data/apps/collection.json';
 
 // Tools
 import { NotesModel } from '../data/tools/notes';
@@ -49,6 +50,7 @@ class AppsViewModel {
     /** Aplicativos na barra de taregas  */
     public get taskBarApps() {
         const pinned = this.state.apps.filter(el => el.options.pinned);
+        pinned.splice(Math.floor(pinned.length / 2), 0, collection);
         return [...pinned, ...this.openedApps.filter(el => !pinned.includes(el))];
     }
 

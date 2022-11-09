@@ -2,12 +2,12 @@
     "id": "-3",
     "foregroundColor": "#F0F0F1",
     "stackPosition": 0,
-    "name": "Collection",
+    "name": "App Collection",
     "icon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/icons%2Fcollection.svg?alt=media",
     "favicon": "https://firebasestorage.googleapis.com/v0/b/portfolio-igor-9557f.appspot.com/o/favicons%2Flighteam.svg?alt=media",
     "url": "",
     "options": {
-        "pinned": true,
+        "pinned": false,
         "maximized": false,
         "minimized": false
     },
