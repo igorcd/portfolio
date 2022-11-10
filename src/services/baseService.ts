@@ -9,12 +9,6 @@ export const Send = <M, R>(client: AxiosInstance, data: { url: string; body: any
     const request = new Promise<R>((resolve, reject) => {
         client[method]<M, AxiosResponse<R>>(url, body, {
             cancelToken: new axios.CancelToken((c) => requestCanceler = c),
-            onUploadProgress: (e: { type: "progress" | ""; total: number; loaded: number}) => {
-                if(e.type == "progress") {
-                    const percentage = Math.round((e.loaded / e.total) * 100);
-                    options?.onProgress && options.onProgress(percentage);
-                }
-            },
             timeout: options?.timeout || 45000
         })
             .then((resp) => {

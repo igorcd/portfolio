@@ -1,19 +1,19 @@
 import { defineConfig } from 'vite';
+import { resolve, dirname } from 'node:path';
+import { fileURLToPath } from 'url';
 import vue from '@vitejs/plugin-vue';
-
-const alias: Record<string, string> = {
-    "vue-i18n": "vue-i18n/dist/vue-i18n.cjs.js"
-};
+import vueI18n from '@intlify/vite-plugin-vue-i18n';
 
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [
         vue(),
+        vueI18n({
+            // if you want to use Vue I18n Legacy API, you need to set `compositionOnly: false`
+            // compositionOnly: false,
+      
+            // you need to set i18n resource including paths !
+            include: resolve(dirname(fileURLToPath(import.meta.url)), './src/locales/**'),
+        })
     ],
-    resolve: {
-        alias
-    },
-    server: {
-        host: '0.0.0.0'
-    }
 });

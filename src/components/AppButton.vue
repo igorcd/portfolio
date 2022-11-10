@@ -1,9 +1,9 @@
 <template>
 
-    <button class="app-button group relative"
-            :class="{'sm:-translate-y-1 scale-105 sm:scale-110]': focused}">
-
-        <div class="absolute bottom-[calc(100%+20px)] opacity-0 group-hover:opacity-100 left-1/2 -translate-x-1/2 pointer-events-none">
+    <button class="app-button group"
+            :class="{'-translate-y-1 scale-105 sm:scale-110]': focused}">
+        
+        <div class="absolute bottom-[calc(100%+20px)] opacity-0 group-hover:opacity-100 left-1/2 -translate-x-1/2 pointer-events-none hidden sm:block">
             <div class="bg-black/80 rounded-lg px-4 text-white py-2 text-sm font-semibold">
                 {{ app.name }}
             </div>

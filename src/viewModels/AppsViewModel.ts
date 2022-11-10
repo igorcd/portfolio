@@ -72,7 +72,43 @@ class AppsViewModel {
         return this.focusedApp?.options.maximized;
     }
 
+    // Métodos privados
+
     // ==== MÉTODOS ====
+    private pinDesktopApp() {
+        this.state.apps[0].options.pinned = true;
+        this.state.apps[1].options.pinned = true;
+        this.state.apps[6].options.pinned = true;
+        this.state.apps[7].options.pinned = true;
+        this.state.apps[8].options.pinned = true;
+        this.state.apps[9].options.pinned = true;
+        this.state.apps[10].options.pinned = true;
+        this.state.apps[11].options.pinned = true;
+        this.state.apps[15].options.pinned = true;
+        this.state.apps[16].options.pinned = true;
+    }
+    
+    private pinMobileApps() {
+        this.state.apps[8].options.pinned = true;
+        this.state.apps[15].options.pinned = true;
+        this.state.apps[11].options.pinned = true;
+        this.state.apps[13].options.pinned = true;
+    }
+    
+    private handleWindowResize() {
+        if(window.innerWidth < 640) {
+            this.pinMobileApps();
+        }
+        else {
+            this.pinDesktopApp();
+        }
+    }
+
+    constructor() {
+        window.addEventListener("resize", () => this.handleWindowResize());
+        this.handleWindowResize();
+    }
+    
 
     /** Restaurar tamanho do app */
     public toogleAppSize() {
